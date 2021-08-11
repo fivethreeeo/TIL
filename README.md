@@ -14,6 +14,7 @@
 ## **분류**
 ### **Javascript**
 - [01. 기본 문법 - 문장, 변수, 정수, 실수, 상수, 진수](https://github.com/mansaout/TIL/blob/main/Javascript/01_basic_lexical_grammar.md)
+- [02. 데이터 타입 - Number, String, Undefined, Null, Boolean, Object](https://github.com/mansaout/TIL/blob/main/Javascript/02_basic_data_type)
 ### **Computer Science Basic - Operating System (OS)**
 ### **Computer Science Basic - System Programming**
 ### **Computer Science Basic - Computer Architecture**
