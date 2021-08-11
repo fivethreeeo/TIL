@@ -6,7 +6,7 @@
 [Undefined](#undefined-type)  
 [Null](#null-type)  
 [Boolean](#boolean-type)  
-[Object](#object-type)
+[Object](#object-type)  
 [정리](#기본-데이터-타입-정리)
 
 <br><br>
