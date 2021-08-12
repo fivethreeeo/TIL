@@ -98,6 +98,7 @@ console.log(height, typeof height);
 //--[실행결과]--
 
 undefined "undefined"
+undefined "undefined"
 
 //초기값인지 값을 할당한 것인지 구분이 되지 않음
 //할당하여 사용 xxxxx

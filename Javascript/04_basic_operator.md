@@ -32,6 +32,7 @@ console.log(two--, two);
 console.log(one, two);
 
 //--[실행결과]--
+
 1 2
 2 1
 2 1
