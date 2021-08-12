@@ -15,7 +15,7 @@
 ### **Javascript**
 - [01. 기본 문법 - 문장, 변수, 정수, 실수, 상수, 진수](https://github.com/mansaout/TIL/blob/main/Javascript/01_basic_lexical_grammar.md)
 - [02. 데이터 타입 - Number, String, Undefined, Null, Boolean, Object](https://github.com/mansaout/TIL/blob/main/Javascript/02_basic_data_type.md)
-- [03. 연산자 - 연산자, 표현식, 해석/실행, 숫자변환, 할당 연산자(=), 산술 연산자(+,-,*,/,%), 단항 연산자(+,-)](https://github.com/mansaout/TIL/blob/main/Javascript/03_operator.md)
+- [03. 연산자 - 연산자, 표현식, 해석/실행, 숫자변환, 할당 연산자(=), 산술 연산자(+,-,*,/,%), 단항 연산자(+,-)](https://github.com/mansaout/TIL/blob/main/Javascript/03_basic_operator.md)
 ### **Computer Science Basic - Operating System (OS)**
 ### **Computer Science Basic - System Programming**
 ### **Computer Science Basic - Computer Architecture**
