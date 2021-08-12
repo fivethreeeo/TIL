@@ -176,6 +176,13 @@ string
        console.log(1 < "3");
        console.log(1 < "A");
 
+       //--[실행결과]--
+
+       true // String Type 안의 문자가 숫자일 경우 => 둘 다 Number Type으로 계산
+       false
+       ```
+
+       ```js
        //양 쪽이 String Type
        var str1 = "\u0031"; // \u0031: 1
        var str3 = "\u0033"; // \u0033: 3
