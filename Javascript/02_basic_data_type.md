@@ -7,7 +7,8 @@
 [Null](#null-type)  
 [Boolean](#boolean-type)  
 [Object](#object-type)  
-[정리](#기본-데이터-타입-정리)
+[정리](#기본-데이터-타입-정리)  
+[Reference](#reference)
 
 <br><br>
 
@@ -192,6 +193,7 @@ console.log(
 
 number string boolean undefined object
 ```
+
 <br><br>
 
 ---
