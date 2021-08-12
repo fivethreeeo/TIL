@@ -120,7 +120,7 @@ var foot;
 var hand = null;
 
 console.log(foot, typeof foot);
-console.log(typeof hand);
+console.log(hand, typeof hand);
 
 //--[실행결과]--
 
