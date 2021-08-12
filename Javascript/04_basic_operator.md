@@ -1,8 +1,7 @@
 ##### 최초작성일 : 2021. 8. 13.<br><br>
-# 04. 연산자 - 후치, 전치, 논리NOT, 관계 연사자 그리고 유니코드/UTF
+# 04. 연산자 - 후치, 전치, 관계 연사자 그리고 유니코드/UTF
 [후치 연산자](#후치-연산자)  
 [전치 연산자](#전치-연산자)  
-[논리 NOT](#논리logical-not-연산자)  
 [유니코드, UTF](#유니코드utf)  
 [관계연산자](#관계연산자)  
 [Reference](#reference)
@@ -83,35 +82,6 @@ console.log(one, two, thr);
 
 5 // 2 + 2 + 1 - 2 + 2 = 5
 1 1 2
-```
-
-<br><br>
-
-## **논리(Logical) NOT 연산자**
-- 형태 : `!value`
-- 표현식의 평가 결과를 true, false로 반환 후,<br>
-**true 면 => false 반환<br>
-false 면 => true 반환**
-- 원래 값은 변환되지 않으며 사용할 때만 변환
-
-```js
-var value = true;
-
-console.log(!value, value);
-console.log(typeof !value, typeof value);
-
-var result = 123;
-
-console.log(!result, result);
-console.log(typeof !result, typeof result);
-
-//--[실행결과]--
-
-false true
-boolean, boolean
-
-false 123
-boolean number
 ```
 
 <br><br>

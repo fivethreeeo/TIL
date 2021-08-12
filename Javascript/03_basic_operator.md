@@ -39,13 +39,22 @@
   - 먼저 `=` 앞을 연산 => 할당
 
 ```js
-var result = 7;
+var result1 = 7,
+result2 = 7,
+result3 = 7,
+result4 = 7;
 
-console.log(result += 7);
+console.log(result1 += 7);
+console.log(result2 -= 7);
+console.log(result3 *= 7);
+console.log(result4 /= 7);
 
 //--[실행결과]--
 
 14
+0
+49
+1
 ```
 
 <br><br>
@@ -79,8 +88,8 @@ console.log("result");
 
 |값 타입|변환 값|
 |---|---|
-|UNdefined|`Nan`|
-|Null|`+0`|
+|UNdefined|`NaN`|
+|Null|`0`|
 |Boolean|true: `1`<br> false: `0`|
 |Number|변환 전/후 같음|
 |String|값이 숫자이면 숫자로 연산<br> 단, `+`연산자는 연결|
