@@ -25,7 +25,6 @@
 ```bash
 git config --list
 ```
-<br>
 
 #### - Open config to edit
 ```bash
