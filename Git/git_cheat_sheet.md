@@ -212,13 +212,13 @@
   ```
   <br>
 
-    - **Deleting**
+  - **Deleting**
   ```bash
   git tag -d v1.0.0 #delete the given tag
   ```
   <br>
 
-    - **Syncing with Remote**
+  - **Syncing with Remote**
   ```bash
   git push origin v1.0.0 #sharing the given tag with remote
   git push origin --tags #sharing all the tags
@@ -226,7 +226,7 @@
   ```
   <br>
 
-    - **Checking out Tags**
+  - **Checking out Tags**
   ```bash
   git checkout v1.0.0 #checkout certain tag
   git checkout -b branchName v1.0.0 #create a new bracnh with the given tag
