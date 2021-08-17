@@ -9,30 +9,34 @@
   - [Git Aliases](#--git-aliases)  
   - [help 보기](#--help)  
 - Basic  
-  - []()  
-  - []()  
-  - []()  
-  - []()  
-  - []()  
-  - []()  
-  - []()  
+  - [Git init](#--git-init)  
+  - [Ignoring files](#--ignoring-files)  
+  - [Staging files](#--staging-files)  
+  - [Modifying files](#--modifying-files)  
+  - [Viewing the Staged/Unstaged changes](#--viewing-the-stagedunstaged-changes)  
+  - [Commit](#--commit)  
+  - [Log](#--log)  
+  - [Tagging](#--tagging)  
+- Branch
+- Stashing
+- Undo
+- Remote
+- Tools
 - [Reference](#reference)  
 
 ## **Set Up**
 
-  <br>
-
-  #### - config 전체보기
+  ### - config 전체보기
   ```bash
   git config --list
   ```
 
-  #### - Open config to edit
+  ### - Open config to edit
   ```bash
   git config --global -e
   ```
 
-  #### - User settings(name, email)
+  ### - User settings(name, email)
   ```bash
   git config --global user.name "name"  #set user.name
   git config --global user.email "email"  #set user.email
@@ -40,23 +44,23 @@
   git config user.email  #check user.email
   ```
 
-  #### - vscode를 기본 에디터로 설정
+  ### - vscode를 기본 에디터로 설정
   ```bash
   git config --list
   ```
 
-  #### - Set Auto CRLF
+  ### - Set Auto CRLF
   ```bash
   git config --global core.autocrlf input  #for Mac
   git config --global core.autocrlf true  #for Windows
   ```
 
-  #### - Git Aliases
+  ### - Git Aliases
   ```bash
   git config --global alias.co checkout #git checkout = git co
   ```
 
-  #### - help
+  ### - help
   ```bash
   git config --help
   git config -h  #short
@@ -66,15 +70,13 @@
 
 ## **Basic**
 
-  <br>
-
-  #### - Git init
+  ### - Git init
   ```bash
   git init #initialize git
   git rm -rf .git #delete .git
   ```
 
-  #### - Ignoring files
+  ### - Ignoring files
   ```bash
   # 모든 .txt 파일. 디렉토리 상관 없음
   *.txt
@@ -95,7 +97,7 @@
   asset/**/abc.txt
   ```
 
-  #### - Staging files
+  ### - Staging files
   ```bash
   git add abc.txt #stage abc.txt
   git add abc.txt 123.txt #stage abc.txt, 123.txt
@@ -104,7 +106,7 @@
   git add . #stage everything without /.gitignore
   ```
 
-  #### - Modifying files
+  ### - Modifying files
   - **Removing files**
   ```bash
   rm file.txt #delete file
@@ -122,7 +124,7 @@
   git mv from.text /logs/from.text
   ```
 
-  #### - Viewing the Staged/Unstaged changes
+  ### - Viewing the Staged/Unstaged changes
   ```bash
   git status
   git status -s #short status
@@ -133,14 +135,14 @@
   git diff --cached #same as --staged
   ```
 
-  #### - Commit
+  ### - Commit
   ```bash
   git commit #commit stagged files
   git commit -m "Commit message" #commit stagged files with commit message
   git commit -am "Commit message" #commit all files with commit message
   ```
 
-  #### - Log
+  ### - Log
   - **See history**
   ```bash
   git log #list of commits
@@ -181,7 +183,7 @@
   - **Viewing a commit**
   ```bash
   git show HEAD #shows the last commit
-  git show <hashcode> #shows <hashcode> commit
+  git show <hashcode> #shows the given commit
   git show <hashcode>:file.txt
   ```
   <br>
@@ -193,19 +195,49 @@
   ```
   <br>
 
-  #### - Log
-  - **See history**
+  ### - Tagging
+  - **Creating**
   ```bash
-  git log #list of commits
-  git log --patch #shows the difference introduced in each commit
-  git log -p
-  git log --oneline #oneline, short for --patch
-  git log --oneline --reverse
+  git tag v1.0.0 #lightweight tag on latest commit
+  git tag v1.0.0 <hashcode> #lightweight tag on the given commit
+  git show v.0.0 #shows the tag
+  git tag -a v.1.0.0 -m "message" #annotated tag
   ```
   <br>
 
+  - **Listing**
+  ```bash
+  git tag #all the tags
+  git tag -l "v1.0.*" #search certain tags
+  ```
+  <br>
 
+    - **Deleting**
+  ```bash
+  git tag -d v1.0.0 #delete the given tag
+  ```
+  <br>
 
+    - **Syncing with Remote**
+  ```bash
+  git push origin v1.0.0 #sharing the given tag with remote
+  git push origin --tags #sharing all the tags
+  git push origin --delete v1.0.0 #delete a remote tag
+  ```
+  <br>
+
+    - **Checking out Tags**
+  ```bash
+  git checkout v1.0.0 #checkout certain tag
+  git checkout -b branchName v1.0.0 #create a new bracnh with the given tag
+  ```
+  <br>
+
+## **Branch**
+## **Stashing**
+## **Undo**
+## **Remote**
+## **Tools**
 
 
 ### **Reference**
