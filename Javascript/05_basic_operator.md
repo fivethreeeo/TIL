@@ -134,5 +134,5 @@ true
 
 <br><br>
 ---
-##### [다음 06. 연산자 - 논리 NOT/OR/AND 연산자, 조건 연산자, 연산자 우선순위](https://github.com/mansaout/TIL/blob/main/Javascript/06_basic_operator.md)  
-##### [이전 04. 연산자 - 후치, 전치, 관계 연사자 그리고 유니코드/UTF](https://github.com/mansaout/TIL/blob/main/Javascript/04_basic_operator.md)  
+##### [다음 06. 연산자 - 논리 NOT/OR/AND 연산자, 조건 연산자, 연산자 우선순위](https://github.com/mansaout/TIL/blob/main/Javascript/06_basic_operator.md)
+##### [이전 04. 연산자 - 후치, 전치, 관계 연사자 그리고 유니코드/UTF](https://github.com/mansaout/TIL/blob/main/Javascript/04_basic_operator.md)
