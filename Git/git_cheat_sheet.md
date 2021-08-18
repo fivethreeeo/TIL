@@ -17,11 +17,27 @@
   - [Commit](#--commit)  
   - [Log](#--log)  
   - [Tagging](#--tagging)  
-- Branch
-- Stashing
-- Undo
-- Remote
-- Tools
+- Branch  
+  - [Branch 생성](#--branch-생성)  
+  - [Branch 관리](#--branch-관리)  
+  - [Merge](#--merge)  
+  - [Rebase](#--rebase)  
+  - [Cherry Pick](#--cherry-pick)  
+- Stash  
+  - [Stash 생성](#--stash-생성)  
+  - [Stash 목록](#--stash-목록)  
+  - [Stash apply](#--stash-apply)  
+  - [Stash 삭제](#--stash-삭제)  
+- Undo  
+  - [Local Changes](#local-changes)  
+  - [Commit](#--commit)  
+  - [Reset - 커밋 초기화](#--reset-커밋-초기화)  
+  - [Revert - 커밋 되돌리기](#--revert-커밋-되돌리기)  
+  - [Interactive Rebasing](#--interactive-rebasing)  
+- [Remote](#--remote)
+- Debuggung
+  - [Blame](#--blame)
+  - [Bisect](#--bisect)
 - [Reference](#reference)  
 
 ## **Set Up**
@@ -143,7 +159,7 @@
   ```
 
   ### - Log
-  - **See history**
+  - **Log history 보기**
   ```bash
   git log #list of commits
   git log --patch #shows the difference introduced in each commit
@@ -176,15 +192,15 @@
   ```bash
   git log HEAD # same as got log
   git log HEAD~1 #HEAD에서 n 전 시점
-  git log <hashcode>
+  git log hash
   ```
   <br>
 
   - **Viewing a commit**
   ```bash
   git show HEAD #shows the last commit
-  git show <hashcode> #shows the given commit
-  git show <hashcode>:file.txt
+  git show hash #shows the given commit
+  git show hash:file.txt
   ```
   <br>
 
@@ -196,23 +212,23 @@
   <br>
 
   ### - Tagging
-  - **Creating**
+  - **Tag 생성**
   ```bash
   git tag v1.0.0 #lightweight tag on latest commit
-  git tag v1.0.0 <hashcode> #lightweight tag on the given commit
+  git tag v1.0.0 hash #lightweight tag on the given commit
   git show v.0.0 #shows the tag
   git tag -a v.1.0.0 -m "message" #annotated tag
   ```
   <br>
 
-  - **Listing**
+  - **Tag 목록**
   ```bash
   git tag #all the tags
   git tag -l "v1.0.*" #search certain tags
   ```
   <br>
 
-  - **Deleting**
+  - **Tag 삭제**
   ```bash
   git tag -d v1.0.0 #delete the given tag
   ```
@@ -234,11 +250,178 @@
   <br>
 
 ## **Branch**
-## **Stashing**
-## **Undo**
-## **Remote**
-## **Tools**
+  ### - Branch 생성
+  ```bash
+  git branch testing #create a new branch 'testing'
+  git switch testing #switches to 'testing' branch
+  git checkout testing
+  git switch -C testing #create and switch to 'testing'
+  git checkout -b testing
+  ```
+  <br>
 
+  ### - Branch 관리
+  ```bash
+  git branch #simple listing of all branches
+  git branch -r #sees the remote branches
+  git branch --all #list including remote branches
+  git branch -v #sees the last commit on each branch
+  git branch --merged #sees merged branches
+  git branch --no-merged #sees not merged branches
+  git branch -d testing #deletes the branch 'testing'
+  git push origin --delete testing
+  git branch --move wrong correct #rename 'wrong' to 'correct'
+  git push --set-upstream origin correct #push new name
+  ```
+  <br>
+
+  ### - Merge
+  ```bash
+  git merge featureA #merges featureA branch into the current one
+  git merge --squash featureA #suqash merge, only one commit
+  git merge --no-ff featureA #creates a merge commit, ff=fast forward
+  git merge --continue
+  git merge --abort
+  git mergetool #opens merge tool
+  ```
+  <br>
+
+  ### - Rebase
+  ```bash
+  git rebase master #rebase current branch onto the master
+  git rebase --onto master service ui #take commits of the ui branch forked from the service branch and move them to master
+  ```
+  <br>
+
+  ### - Cherry Pick
+  ```bash
+  git cherry-pick hash #해당 커밋만 현재 브랜치로 가져옴
+  ```
+  <br>
+
+
+## **Stash**
+  ### - Stash 생성
+  ```bash
+  git stash #make a new stash
+  git stash push -m "message" #with message
+  git stash --keep-index #stash but keep them in the staging area
+  git stash -u #--include-untracked
+  ```
+  <br>
+
+  ### - Stash 목록
+  ```bash
+  git stash list #see all the stashes
+  git stash show hash #see the given stash
+  git stash show hash -p #see the given stash with details
+  ```
+  <br>
+
+  ### - Stash apply
+  ```bash
+  git stash apply #applies the latest stash
+  git stash apply hash #applies the given stash
+  git stash pop #apply and drop
+  git stash branch branchName #apply stash in a new branch
+  ```
+  <br>
+
+  ### - Stash 삭제
+  ```bash
+  git stash drop hash #deletes the given stash
+  git stash clear #deletes all the stashes
+  ```
+  <br>
+
+## **Undo**
+  ### - Local Changes
+  ```bash
+  git restore file.txt #unmodifying a modified file
+  git restore . #unmodifying all modified files in the directory
+  git restore --staged file.txt #unstaging a staged file
+  git clean -fd #removes all untracked files
+  ```
+  <br>
+
+  ### - Commit
+  ```bash
+  git commit --amend
+  git commit --amend -m "message"
+  ```
+  <br>
+
+  ### - Reset (커밋 초기화)
+  ```bash
+  git reset --soft HEAD #removes the commit and keep changes at staging area
+  git reset --mixed HEAD #removes the commit and keep changes at working directory
+  git reset --hard HEAD #removes the commit and don't keep the code
+
+  git reflog # HEAD 변경 이력
+  git reset --hard hash
+  ```
+  <br>
+
+  ### - Revert (커밋 되돌리기)
+  ```bash
+  git revert hash #reverts the given commit
+  git revert HEAD~1
+  gut revert --no-commit hash #reverts the given commit without revert commit
+  ```
+  <br>
+
+  ### - Interactive Rebasing
+  ```bash
+  git rebase -i HEAD~2 #바꾸고 싶은 이전 해시코드 입력
+  git rebase --continue
+  git rebase --abort
+  ```
+  <br>
+
+## **Remote**
+  ```bash
+  git clone URL #cloning
+  git remote -v #shows all the remote URLs
+  git remote add name URL #add a new remote with name
+
+  git remote #inspecting
+  git remote show
+  git remote show origin
+
+  git remote rename sec second #rename remote
+  git remote remove second #remove remote
+  ```
+  - **Syncing with remotes**
+  ```bash
+  git fetch #pulls down all the data from remote
+  git fetch origin #same as the above
+  git fetch origin master #pulls down only master branch
+  git pull #fetch and merge
+  git pull --rebase #use rebase when pulling instead of merge
+  git push
+  git push origin master
+  ```
+  <br>
+
+## **Debugging**
+### - Blame
+```bash
+git blame file.txt
+```
+<br>
+
+### - Bisect
+  ```bash
+  git bisect start
+  git bisect good hash
+  git bisect good
+  git bisect bad
+  git bisect reset
+  ```
+
+<br>
+<br>
 
 ### **Reference**
 - [Git - Reference](https://git-scm.com/docs)
+- [Git 마스터 과정](https://academy.dream-coding.com/courses/git)

@@ -23,6 +23,7 @@
 
 ### **Git**
 - [Git Cheat Sheet](https://github.com/mansaout/TIL/blob/main/Git/git_cheat_sheet.md)
+- Git 활용 예제
 - vi(vim) 편집기 기본 사용법
 
 ### **Computer Science Basic - Operating System (OS)**
