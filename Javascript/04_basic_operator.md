@@ -193,3 +193,8 @@ string
 ---
 ### **Reference**
 - [자바스크립트 비기너: 튼튼한 기본 만들기](https://www.inflearn.com/course/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%B9%84%EA%B8%B0%EB%84%88)
+
+<br><br>
+---
+##### [다음 05. 연산자 - 동등, 일치, 부등, 불일치 연산자](https://github.com/mansaout/TIL/blob/main/Javascript/05_basic_operator.md)  
+##### [이전 03. 연산자 - 연산자, 표현식, 해석/실행, 숫자변환, 할당 연산자(=), 산술 연산자(+,-,*,/,%), 단항 연산자(+,-)](https://github.com/mansaout/TIL/blob/main/Javascript/03_basic_operator.md)
