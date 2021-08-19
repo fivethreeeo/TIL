@@ -178,7 +178,7 @@ string
        //다음 것은 비교하지 않음
 
        console.log("A07" > "A21");
-       
+
        // 1. A와 A 같으므로 다음을 비교
        // 2. "0" 과 "2"을 비교 후 반환
        // 3. "7" 과 "1"은 비교하지 않음
@@ -189,7 +189,6 @@ string
        ```
 
 <br><br>
-
 ---
 ### **Reference**
 - [자바스크립트 비기너: 튼튼한 기본 만들기](https://www.inflearn.com/course/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%B9%84%EA%B8%B0%EB%84%88)
