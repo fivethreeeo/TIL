@@ -88,7 +88,7 @@ console.log("result");
 
 |값 타입|변환 값|
 |---|---|
-|UNdefined|`NaN`|
+|Undefined|`NaN`|
 |Null|`0`|
 |Boolean|true: `1`<br> false: `0`|
 |Number|변환 전/후 같음|
@@ -120,7 +120,7 @@ NaN
 <br>
 
 ### **`+` 연산자**
-- `+` 양쪽의 표현식을 평가
+- **`+`** 양쪽의 표현식을 평가
   - 평가 결과를 더함
   - 왼쪽에서 오른쪽으로 연산
 - **평가 결과 연결**
@@ -142,7 +142,7 @@ console.log(1 + false);// false 0
 <br>
 
 ### **`-` 연산자**
-- `+` 양쪽의 표현식을 평가
+- **`-`** 양쪽의 표현식을 평가
   - 평가 결과를 뺌
   - 왼쪽에서 오른쪽으로 연산
 - **`NaN` 반환**
@@ -192,6 +192,7 @@ NaN
 
 ```js
 //소수 값이 생기는 경우 처리 (IEEE 754 유동 소수점)
+
 console.log(2.3 * 3);
 
 //실수를 정수로 변환하여 값을 구한 후
@@ -253,6 +254,7 @@ console.log(5 % 2);
 
 ```js
 //소수 값이 생기는 경우 처리 (IEEE 754 유동 소수점)
+
 console.log(5 % 2.3);
 
 //실수를 정수로 변환하여 값을 구한 후
@@ -270,7 +272,7 @@ console.log((5 * 10) % (2.3 * 10) / 10);
 
 ## **단항 연산자**
 - **단항 `+`연산자**
-  - 형태 : `+value`
+  - 형태 : **`+value`**
   - 값을 Number Type으로 변환
   - 코드 가독성
     - +를 +연산자(더하기)로 착각할 수 있음
@@ -291,7 +293,7 @@ number
 ```
 
 - **단항 `-`연산자**
-  - 형태 : `-value`
+  - 형태 : **`-value`**
   - 값을 Number Type으로 변환
   - 값의 부호를 바꿈
     - `+`는 `-`로, `-`는 `+`로
@@ -318,5 +320,5 @@ console.log(-value, typeof -value);
 
 <br><br>
 ---
-##### [다음 04. 연산자 - 후치, 전치, 관계 연사자 그리고 유니코드/UTF](https://github.com/mansaout/TIL/blob/main/Javascript/04_basic_operator.md)
+##### [다음 04. 연산자 - 후치, 전치, 관계 연산자 그리고 유니코드/UTF](https://github.com/mansaout/TIL/blob/main/Javascript/04_basic_operator.md)
 ##### [이전 02. 데이터 타입 - Number, String, Undefined, Null, Boolean, Object](https://github.com/mansaout/TIL/blob/main/Javascript/02_basic_data_type.md)
