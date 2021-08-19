@@ -1,12 +1,11 @@
 ##### 최초작성일 : 2021. 8. 19.<br><br>
-# 07. 문장 - if, while, do-while, for, break, continue
-[if 문](#if-문)  
-[while 문](#while-문)  
-[do-while 문](#do-while-문)  
-[for 문](#for-문)  
-[for 문 예제](#for문-예제)  
-[break](#break)  
-[continue](#continue)  
+# 08. 문장 - switch, try-catch(finally, throw), debugger
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
 [Reference](#reference)
 
 <br><br>
@@ -260,5 +259,4 @@ for(var i = 0; i < 5; i++){
 
 <br><br>
 ---
-##### [이전 06. 연산자 - 논리 NOT/OR/AND 연산자, 조건 연산자, 연산자 우선순위](https://github.com/mansaout/TIL/blob/main/Javascript/06_basic_operator.md)
-##### [다음 08. 문장(Statement) - switch, try-catch(finally, throw), debugger](https://github.com/mansaout/TIL/blob/main/Javascript/08_basic_statement.md)
+##### [이전 07. 문장 - if, while, do-while, for, break, continue](https://github.com/mansaout/TIL/blob/main/Javascript/07_basic_statement.md)

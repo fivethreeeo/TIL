@@ -158,5 +158,5 @@ console.log(1 === "1" ? "같음" : "다름"); //false
 
 <br><br>
 ---
-##### [다음 07. 문장 - ](https://github.com/mansaout/TIL/blob/main/Javascript/07_basic_statement.md)
+##### [다음 07. 문장(Statement) - if, while, do-while, for, break, continue](https://github.com/mansaout/TIL/blob/main/Javascript/07_basic_statement.md)
 ##### [이전 05. 연산자 - 동등, 일치, 부등, 불일치 연산자](https://github.com/mansaout/TIL/blob/main/Javascript/05_basic_operator.md)
