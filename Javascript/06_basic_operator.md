@@ -10,7 +10,7 @@
 <br><br>
 
 ## **논리 NOT 연산자**
-- 형태 : **`!value**`
+- 형태 : **`!value`**
 - 표현식의 평가 결과를 **true, false**로 반환 후,<br>
 **true 면 => false 반환<br>
 false 면 => true 반환**
@@ -64,7 +64,7 @@ console.log(value || zero || one);
 //  4. 결과 값이 true가 나온 값인 1을 반환
 ```
 
-- **`true`**면 비교 종료!!!
+- **`true`** 면 비교 종료!!!
 ```js
 var zero = 0,
 one = 1;
@@ -109,7 +109,7 @@ console.log(two && one);
 //  one, two 둘 다 true
 //  그래서 각각 평가 종료 시점의 one, two의 값을 반환
 ```
-- **`false`**면 비교 종료!!!
+- **`false`** 면 비교 종료!!!
 ```js
 var zero = 0,
 two = 2;
