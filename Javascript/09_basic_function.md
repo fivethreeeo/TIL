@@ -1,4 +1,4 @@
-##### 최초작성일 : 2021. 8. 19.<br><br>
+##### 최초작성일 : 2021. 8. 20.<br><br>
 # 09. 함수 - 구성, 규칙, 호출, return
 [함수 기본](#함수-function)  
 [호출](#함수-호출)  
@@ -104,17 +104,11 @@ undefined
 
 
 <br><br>
-
-##
-
-
-
-<br><br>
 ---
 ### **Reference**
 - [자바스크립트 비기너: 튼튼한 기본 만들기](https://www.inflearn.com/course/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%B9%84%EA%B8%B0%EB%84%88)
 
 <br><br>
 ---
-##### [다음 10. ](https://github.com/mansaout/TIL/blob/main/Javascript/10_basic_statement.md)
+##### [다음 10. 오브젝트(Object) - Property 개요, 추가, 변경, 값추출, for~in문, 빌트인(Built-in) ](https://github.com/mansaout/TIL/blob/main/Javascript/10_basic_object.md)
 ##### [이전 08. 문장(Statement) - switch, try-catch(finally, throw](https://github.com/mansaout/TIL/blob/main/Javascript/08_basic_statement.md)
