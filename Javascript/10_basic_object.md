@@ -1,5 +1,5 @@
 ##### 최초작성일 : 2021. 8. 20.<br><br>
-# 10. 오브젝트(Object) - Property 개요, 추가, 변경, 값추출, for~in문, 빌트인(Built-in)
+# 10. 객체(Object) - Property 개요, 추가, 변경, 값추출, for~in문, 빌트인(Built-in)
 [프로퍼티(Property)](#프로퍼티property)  
 [프로퍼티 추가/변경](#프로퍼티-추가변경)  
 [프로퍼티 값 추출](#추출)  
