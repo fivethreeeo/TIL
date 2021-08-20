@@ -1,256 +1,170 @@
-##### 최초작성일 : 2021. 8. 19.<br><br>
-# 08. 문장 - switch, try-catch(finally, throw), debugger
-[]()  
-[]()  
-[]()  
-[]()  
-[]()  
-[]()  
+##### 최초작성일 : 2021. 8. 20.<br><br>
+# 08. 문장 - switch, try-catch(finally, throw)
+[switch](#switch-문)  
+[try-catch(finally, throw)](#try-catchfinally-throw-문)  
 [Reference](#reference)
 
 <br><br>
 
-## **if 문**
+## **switch 문**
 - 형태 :
-  - **`if (exp) 'statement1'`**
-  - **`if (exp) 'statement1' else 'statement2'`**
-- 처리 순서
-  1. exp 평가
-  2. 평가 결과를 **`true`, `false`** 반환
-  3. **`true`** 면 statement1 실행
-  4. **`false`** 면 statement2 실행
+    ```js
+    switch (exp) {
+        case exp1:
+            문장 리스트opt
+        case exp2:
+            문장 리스트opt
+        default :
+            문장 리스트opt
+    };
 
-```js
-var a = 1, b = 2;
-
-if(a === b){
-    console.log("'a === b'는 true");
-}else{
-    console.log("'a === b'는 false");
-};
-
-//--[실행결과]--
-'a === b'는 false
-```
-```js
-// block를 사용하지 않는 경우
-
-var a = 1, b = 2;
-
-if(a === b)
-    console.log("'a === b'는 true");
-else
-    console.log("'a === b'는 false");
-```
-
-<br><br>
-
-## **while 문**
-- 형태 :
-  - **`while (exp)`**
-- 처리 방법
-  - exp의 평가 결과가 **`false`** 가 될 때까지 실행
-  - 반복이 종료되는 조건이 필요
-
-```js
-var i = 1;
-
-while(i < 3){ //(i < 3)이 false가 될 때까지 반복 실행
-    console.log(i);
-    i++;
-};
-
-//--[실행결과]--
-
-1
-2
-```
-
-<br><br>
-
-## **do-while 문**
-- 형태 :
-  - **`do 'statement' while (exp)`**
-- 처리 순서
-    1. do 의 'statement'를 실행
-    2. exp의 평가 결과가 **`true`** 이면 다시 do 의 'statement'를 실행
-    3. exp의 평가 결과가 **`false`** 이면 while 의 'statement'를 실행
-
-```js
-var i = 6;
-do {
-    console.log("do:",i);
-    i--;
-} while (i < 5){
-    console.log("while:",i);
-}
-
-//--[실행결과]--
-
-do: 6
-do: 5
-do: 4
-while: 3
-```
-
-<br><br>
-
-## **for 문**
-- 형태 :
-  - **`for(초깃값; 비교; 증감) 문장`**
-  - **`for(var i = 0; i < 3; i++) 'statement'`**
-  - 비교 표현식의 평가 결과가 **`false`** 가 될 때까지 실행
-
-```js
-for(var i=1; i<3; i++){
-    console.log(i);
-}
-
-//--[실행결과]--
-
-1
-2
-3
-```
-
-- for 문 안의 표현식은 생략 가능
-`for( ; ; )`
-
-## **for문 예제**
-- 문제
-    > 1. for() 문을 사용하여 1에서 50까지의 수를 반복해, 홀수 값들과 짝수 값들을 각각 누적합니다.
-    > 2. 누적된 홀수 값, 누적된 짝수 값, 누적된 모든 값을 출력합니다.
-- 풀이
-```js
-/*
-    생각한 풀이 순서
-    1. 먼저 홀수와 짝수들의 누적 값들을 저장할 변수를 세팅
-    2. for()문으로 1~50까지 숫자 1씩 더하는 반복문 실행
-    3. 실행된 값을 if()문으로 홀수, 짝수의 경우 각각의 세팅된 변수에 누적
-*/
-
-var odd = 0, // 홀수 값들의 누적
-    even = 0, // 짝수 값들의 누적
-    sum = 0; // 모든 값들의 누적
-
-for(i = 1; i <51; i++) { // 1 ~ 50 실행
-    if(i % 2 === 0){ // i를 2로 나눈 값이 0
-        console.log(i, "짝수"); // i 값이 짝수가 맞는지 출력 & 체크
-        even += i; // even에 짝수인 i값을 더함
-        console.log(even, "짝수 누적 값"); // even에 누적이 되는지 체크
-    } else {
-        console.log(i, "홀수"); // i 값이 홀수가 맞는지 출력 & 체크
-        odd += i; //odd에 홀수인 i값을 더함
-        console.log(odd, "홀수 누적 값"); // odd에 누적이 되는지 체크
+    //or 의 형태. exp1 or exp2 일 때 해당 문장 수행
+    switch (exp) {
+        case exp1 :
+        case exp2 :
+            문장 리스트opt
     }
-}
-
-//--[실행결과]--
-
-1 "홀수"
-1 "홀수 누적 값"
-2 "짝수"
-2 "짝수 누적 값"
-3 "홀수"
-4 "홀수 누적 값"
-4 "짝수"
-6 "짝수 누적 값"
-.
-.
-.
-49 "홀수"
-625 "홀수 누적 값"
-50 "짝수"
-650 "짝수 누적 값"
-```
-```js
-// 위의 풀이를 리팩토링
-
-var odd = 0, even = 0, sum = 0;
-
-for(i = 1; i < 51; i++) {
-    (i % 2 === 0) ? (even += i) : (odd += i); //삼항연산자
-}
-
-sum = odd + even; //모든 수 누적 값 계산
-
-console.log("홀수 누적 값 : "+odd);
-console.log("짝수 누적 값 : "+even);
-console.log("모든 수 누적 값 : "+sum);
-
-//--[실행결과]--
-
-홀수 누적 값 : 625
-짝수 누적 값 : 650
-모든 수 누적 값 : 1275
-```
-
-
-<br><br>
-
-## **break**
-- 형태 :
-  - `break;`
-- 반복문을 도중에 종료시킴
+    ```
+- (exp) > switch 표현식의 평가 값과 일치하는 case 문 수행
+- 일치하는 case가 없으면 default 수행
+- break가 없으면 일치하는 값 또는 default 값 부터 모두 실행
 
 ```js
-var k = 0, i = 0;
+var exp = 3, result = 0;
 
-while(k < 3){
-    i++;
-    if(i === 5){
-        break; // break가 없다면 (k < 3)이 false가 될 수 없기 때문에 반복문이 종료되지 않음
-    };
-    console.log(i);
+switch(exp) {
+    case 1:
+    case 1+1:
+        console.log("log");
+        result = 500;
+        //break; //break 넣어서 확인해보기
+    default:
+        console.log("default");
+        //break; //break 넣어서 확인해보기
+    case 4:
+        console.log("normal");
+        result = 1000;
 }
+
+console.log(result);
 
 //--[실행결과]--
 
-1
-2
-3
-4
-```
-```js
-for(var i = 0; i < 4; i++){
-    if(i == 2){
-        console.log(i, "i == 2");
-        break;
-        console.log(i, "i == 2"); // break; 때문에 출력되지 않음
-    };
-    console.log(i);
-}
-
-//--[실행결과]--
-
-0
-1
-2 "i == 2"
+default
+normal
+1000
 ```
 
 <br><br>
 
-## **continue**
+## **try-catch(finally, throw) 문**
 - 형태 :
-  - `continue;`
-- 반복문의 처음으로 분기. **증감을 포함**
+    ```js
+        // try 블록 catch(식별자) 블록
+        try {
+
+        } catch(error) {
+
+        }
+
+        // try 블록 finally 블록
+        try {
+
+        } finally {
+            
+        }
+
+        // try 블록 catch(식별자) 블록 finally 블록
+        try {
+
+        } catch(error) {
+
+        } finally {
+
+        }
+    ```
+- try 문에서 예외 발생을 인식
+- **예외가 발생하면 -> catch 블록을 실행**
+- **finally 블록은 예외 발생과 관계없이 실행**
 
 ```js
-for(var i = 0; i < 5; i++){
-    if(i == 2 || i == 3){
-        continue;
-        console.log(i, "i == 2"); // continue; 때문에 출력되지 않음
-    };
-    console.log(i);
+// try 블록 catch(식별자) 블록
+
+var value1;
+
+try {
+    console.log("예외발생 전");
+    value1 = value2; //원래라면 error: value2 is not defined
+    console.log("예외발생"); //예외 발생 이후 문장은 실행되지 않음
+} catch(error) {
+    console.log("catch 실행");
 }
 
 //--[실행결과]--
 
-0
-1
-4
+예외발생 전
+catch 실행
 ```
 
+```js
+// 형태: try 블록 finally 블록
+
+var value1;
+
+try {
+    value1 = "100";
+    console.log("error 없음"); //예외 발생 이후 문장은 실행되지 않음
+} finally {
+    console.log("finally 실행");
+    console.log("value1 = "+value1)
+}
+
+//--[실행결과]--
+
+error 없음
+finally 실행
+value1 = 100
+```
+
+```js
+// try 블록 catch(식별자) 블록 finally 블록
+
+var value1;
+
+try{
+    value1 = "200";
+    console.log("error 없음");
+}catch(e){
+    console.log("error 발생, catch 실행");
+}finally{
+    console.log("finally");
+}
+
+//--[실행결과]--
+
+error 없음
+finally
+```
+
+<br>
+
+- **`throw`**
+    - 형태 : `throw (exp)`
+    - 명시적으로 예외를 발생시킴
+```js
+try {
+    throw "예외 발생 !!!!";
+    var sports = "스포츠"; //throw 때문에 아래의 문장은 실행되지 않음
+    console.log(sports);
+} catch(error) {
+    console.log("error!!");
+}
+
+//--[실행결과]--
+
+예외 발생 !!!!
+error!!
+```
 
 <br><br>
 ---
@@ -259,4 +173,5 @@ for(var i = 0; i < 5; i++){
 
 <br><br>
 ---
+##### [다음 09. 함수 - 구성, 규칙, 호출, return문](https://github.com/mansaout/TIL/blob/main/Javascript/09_basic_function.md)
 ##### [이전 07. 문장 - if, while, do-while, for, break, continue](https://github.com/mansaout/TIL/blob/main/Javascript/07_basic_statement.md)

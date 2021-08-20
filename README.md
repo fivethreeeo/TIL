@@ -20,6 +20,8 @@
 - [05. 연산자 - 동등, 일치, 부등, 불일치 연산자](https://github.com/mansaout/TIL/blob/main/Javascript/05_basic_operator.md)
 - [06. 연산자 - 논리 NOT/OR/AND 연산자, 조건 연산자, 연산자 우선순위](https://github.com/mansaout/TIL/blob/main/Javascript/06_basic_operator.md)
 - [07. 문장 - if, while, do-while, for, break, continue](https://github.com/mansaout/TIL/blob/main/Javascript/07_basic_statement.md)
+- [08. 문장 - switch, try-catch(finally, throw)](https://github.com/mansaout/TIL/blob/main/Javascript/08_basic_statement.md)
+- [09. 함수 - 구성, 규칙, 호출, return](https://github.com/mansaout/TIL/blob/main/Javascript/09_basic_function.md)
 
 
 ### **Git**

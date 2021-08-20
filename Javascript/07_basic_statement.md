@@ -259,5 +259,5 @@ for(var i = 0; i < 5; i++){
 
 <br><br>
 ---
+##### [다음 08. 문장(Statement) - switch, try-catch(finally, throw)](https://github.com/mansaout/TIL/blob/main/Javascript/08_basic_statement.md)
 ##### [이전 06. 연산자 - 논리 NOT/OR/AND 연산자, 조건 연산자, 연산자 우선순위](https://github.com/mansaout/TIL/blob/main/Javascript/06_basic_operator.md)
-##### [다음 08. 문장(Statement) - switch, try-catch(finally, throw), debugger](https://github.com/mansaout/TIL/blob/main/Javascript/08_basic_statement.md)
