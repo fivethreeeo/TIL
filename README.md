@@ -27,7 +27,7 @@
   - [09. 함수 - 구성, 규칙, 호출, return](https://github.com/mansaout/TIL/blob/main/Javascript/09_basic_function.md)
   - [10. 객체(Object) - Property 개요, 추가, 변경, 값추출, for~in문, 빌트인(Built-in) ](https://github.com/mansaout/TIL/blob/main/Javascript/10_basic_object.md)
   - [11. 객체 - Number Object (Number(), Number상수, new 연산자 - 인스턴스 생성, new Number() - 인스턴스 형태)](https://github.com/mansaout/TIL/blob/main/Javascript/11_basic_number_object.md)
-  - [12. 객체 - Number Object (Primitive 값/타입, valueOf, toString(), toLocaleString(), toExponential(), toFixed())](https://github.com/mansaout/TIL/blob/main/Javascript/11_basic_number_object.md)
+  - [12. 객체 - Number Object (Primitive 값/타입, valueOf, toString(), toLocaleString(), toExponential(), toFixed())](https://github.com/mansaout/TIL/blob/main/Javascript/12_basic_number_object.md)
   - [13. 객체 - String Object ()](https://github.com/mansaout/TIL/blob/main/Javascript/13_string_number_object.md)
 - #### **Git**
   - [Git Cheat Sheet](https://github.com/mansaout/TIL/blob/main/Git/git_cheat_sheet.md)
