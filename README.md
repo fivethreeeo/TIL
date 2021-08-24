@@ -30,5 +30,5 @@
   - [11. 객체 - Number Object (Number(), Number상수, new 연산자, new Number()](https://github.com/mansaout/TIL/blob/main/Javascript/11_basic_number_object.md)
   - [12. 객체 - Number Object (Primitive, valueOf, toString(), toLocaleString(), toExponential(), toFixed())](https://github.com/mansaout/TIL/blob/main/Javascript/12_basic_number_object.md)
 
-- ### **Git**
+### **Git**
   - [Git Cheat Sheet](https://github.com/mansaout/TIL/blob/main/Git/git_cheat_sheet.md)
