@@ -11,28 +11,24 @@
 
 <br>
 
-## **분류**
+## **Study Log**
 
-### **Study Log**
-
-- #### **Javascript**
-  - #### 자바스크립트 기초
-    - [01. ]()
-  - #### 자바스크립트 문법
-    - [01. 기본 문법 - 문장, 변수, 정수, 실수, 상수, 진수](https://github.com/mansaout/TIL/blob/main/Javascript/01_basic_lexical_grammar.md)
-    - [02. 데이터 타입 - Number, String, Undefined, Null, Boolean, Object](https://github.com/mansaout/TIL/blob/main/Javascript/02_basic_data_type.md)
-    - [03. 연산자 - 연산자, 표현식, 해석/실행, 숫자변환, 할당(=), 산술(+,-,*,/,%), 단항(+,-) 연산자](https://github.com/mansaout/TIL/blob/main/Javascript/03_basic_operator.md)
-    - [04. 연산자 - 후치, 전치, 관계 연산자 그리고 유니코드/UTF](https://github.com/mansaout/TIL/blob/main/Javascript/04_basic_operator.md)
-    - [05. 연산자 - 동등, 일치, 부등, 불일치 연산자](https://github.com/mansaout/TIL/blob/main/Javascript/05_basic_operator.md)
-    - [06. 연산자 - 논리 NOT/OR/AND 연산자, 조건 연산자, 연산자 우선순위](https://github.com/mansaout/TIL/blob/main/Javascript/06_basic_operator.md)
-    - [07. 문장 - if, while, do-while, for, break, continue](https://github.com/mansaout/TIL/blob/main/Javascript/07_basic_statement.md)
-    - [08. 문장 - switch, try-catch(finally, throw)](https://github.com/mansaout/TIL/blob/main/Javascript/08_basic_statement.md)
-    - [09. 함수 - 구성, 규칙, 호출, return](https://github.com/mansaout/TIL/blob/main/Javascript/09_basic_function.md)
-    - [10. 객체(Object) - Property 개요, 추가, 변경, 값추출, for~in문, 빌트인(Built-in) ](https://github.com/mansaout/TIL/blob/main/Javascript/10_basic_object.md)
-    - [11. 객체 - Number Object (Number(), Number상수, new 연산자 - 인스턴스 생성, new Number() - 인스턴스 형태)](https://github.com/mansaout/TIL/blob/main/Javascript/11_basic_number_object.md)
-    - [12. 객체 - Number Object (Primitive 값/타입, valueOf, toString(), toLocaleString(), toExponential(), toFixed())](https://github.com/mansaout/TIL/blob/main/Javascript/12_basic_number_object.md)
+### **Javascript**
+- ##### 자바스크립트 기초
+  - [01. ]()
+- ##### 자바스크립트 문법
+  - [01. 기본 문법 - 문장, 변수, 정수, 실수, 상수, 진수](https://github.com/mansaout/TIL/blob/main/Javascript/01_basic_lexical_grammar.md)
+  - [02. 데이터 타입 - Number, String, Undefined, Null, Boolean, Object](https://github.com/mansaout/TIL/blob/main/Javascript/02_basic_data_type.md)
+  - [03. 연산자 - 연산자, 표현식, 해석/실행, 숫자변환, 할당(=), 산술(+,-,*,/,%), 단항(+,-) 연산자](https://github.com/mansaout/TIL/blob/main/Javascript/03_basic_operator.md)
+  - [04. 연산자 - 후치, 전치, 관계 연산자 그리고 유니코드/UTF](https://github.com/mansaout/TIL/blob/main/Javascript/04_basic_operator.md)
+  - [05. 연산자 - 동등, 일치, 부등, 불일치 연산자](https://github.com/mansaout/TIL/blob/main/Javascript/05_basic_operator.md)
+  - [06. 연산자 - 논리 NOT/OR/AND 연산자, 조건 연산자, 연산자 우선순위](https://github.com/mansaout/TIL/blob/main/Javascript/06_basic_operator.md)
+  - [07. 문장 - if, while, do-while, for, break, continue](https://github.com/mansaout/TIL/blob/main/Javascript/07_basic_statement.md)
+  - [08. 문장 - switch, try-catch(finally, throw)](https://github.com/mansaout/TIL/blob/main/Javascript/08_basic_statement.md)
+  - [09. 함수 - 구성, 규칙, 호출, return](https://github.com/mansaout/TIL/blob/main/Javascript/09_basic_function.md)
+  - [10. 객체(Object) - Property 개요, 추가, 변경, 값추출, for~in문, 빌트인(Built-in) ](https://github.com/mansaout/TIL/blob/main/Javascript/10_basic_object.md)
+  - [11. 객체 - Number Object (Number(), Number상수, new 연산자, new Number()](https://github.com/mansaout/TIL/blob/main/Javascript/11_basic_number_object.md)
+  - [12. 객체 - Number Object (Primitive, valueOf, toString(), toLocaleString(), toExponential(), toFixed())](https://github.com/mansaout/TIL/blob/main/Javascript/12_basic_number_object.md)
 
 - ### **Git**
   - [Git Cheat Sheet](https://github.com/mansaout/TIL/blob/main/Git/git_cheat_sheet.md)
-  - Git 활용 예제
-  - vi(vim) 편집기 기본 사용법
