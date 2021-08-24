@@ -151,5 +151,5 @@ height 100
 
 <br><br>
 ---
-##### [다음 11. 객체 - Number Object](https://github.com/mansaout/TIL/blob/main/Javascript/11_basic_number_object.md)
-##### [이전 09. 함수 - 구성, 규칙, 호출, return](https://github.com/mansaout/TIL/blob/main/Javascript/09_basic_function.md)
+##### [다음 11. 객체 - Number Object](https://github.com/mansaout/TIL/blob/main/Javascript/11_grammar_number_object.md)
+##### [이전 09. 함수 - 구성, 규칙, 호출, return](https://github.com/mansaout/TIL/blob/main/Javascript/09_grammar_function.md)

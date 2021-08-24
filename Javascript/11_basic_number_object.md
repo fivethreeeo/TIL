@@ -159,5 +159,5 @@ window.onload = function() {
 
 <br><br>
 ---
-##### [다음 12. 객체 - Number Object (Primitive 값/타입, valueOf, toString(), toLocaleString(), toExponential(), toFixed())](https://github.com/mansaout/TIL/blob/main/Javascript/12_basic_number_object.md)
-##### [이전 10. 객체(Object) - Property 개요, 추가, 변경, 값추출, for~in문, 빌트인(Built-in)](https://github.com/mansaout/TIL/blob/main/Javascript/10_basic_object.md)
+##### [다음 12. 객체 - Number Object (Primitive 값/타입, valueOf, toString(), toLocaleString(), toExponential(), toFixed())](https://github.com/mansaout/TIL/blob/main/Javascript/12_grammar_number_object.md)
+##### [이전 10. 객체(Object) - Property 개요, 추가, 변경, 값추출, for~in문, 빌트인(Built-in)](https://github.com/mansaout/TIL/blob/main/Javascript/10_grammar_object.md)

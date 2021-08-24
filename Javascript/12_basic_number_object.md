@@ -210,4 +210,4 @@ console.log(
 
 <br><br>
 ---
-##### [이전 11. 객체 - Number Object (Number(), Number상수, new 연산자 - 인스턴스 생성, new Number() - 인스턴스 형태)](https://github.com/mansaout/TIL/blob/main/Javascript/11_basic_number_object.md)
+##### [이전 11. 객체 - Number Object (Number(), Number상수, new 연산자 - 인스턴스 생성, new Number() - 인스턴스 형태)](https://github.com/mansaout/TIL/blob/main/Javascript/11_grammar_number_object.md)

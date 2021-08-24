@@ -320,5 +320,5 @@ console.log(-value, typeof -value);
 
 <br><br>
 ---
-##### [다음 04. 연산자 - 후치, 전치, 관계 연산자 그리고 유니코드/UTF](https://github.com/mansaout/TIL/blob/main/Javascript/04_basic_operator.md)
-##### [이전 02. 데이터 타입 - Number, String, Undefined, Null, Boolean, Object](https://github.com/mansaout/TIL/blob/main/Javascript/02_basic_data_type.md)
+##### [다음 04. 연산자 - 후치, 전치, 관계 연산자 그리고 유니코드/UTF](https://github.com/mansaout/TIL/blob/main/Javascript/04_grammar_operator.md)
+##### [이전 02. 데이터 타입 - Number, String, Undefined, Null, Boolean, Object](https://github.com/mansaout/TIL/blob/main/Javascript/02_grammar_data_type.md)

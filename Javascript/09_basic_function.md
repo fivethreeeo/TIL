@@ -110,5 +110,5 @@ undefined
 
 <br><br>
 ---
-##### [다음 10. 객체(Object) - Property 개요, 추가, 변경, 값추출, for~in문, 빌트인(Built-in)](https://github.com/mansaout/TIL/blob/main/Javascript/10_basic_object.md)
-##### [이전 08. 문장(Statement) - switch, try-catch(finally, throw](https://github.com/mansaout/TIL/blob/main/Javascript/08_basic_statement.md)
+##### [다음 10. 객체(Object) - Property 개요, 추가, 변경, 값추출, for~in문, 빌트인(Built-in)](https://github.com/mansaout/TIL/blob/main/Javascript/10_grammar_object.md)
+##### [이전 08. 문장(Statement) - switch, try-catch(finally, throw](https://github.com/mansaout/TIL/blob/main/Javascript/08_grammar_statement.md)

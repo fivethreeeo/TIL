@@ -143,4 +143,4 @@ console.log(0x10);  //출력값 => 8
 
 <br><br>
 ---
-##### [다음 02. 데이터 타입 - Number, String, Undefined, Null, Boolean, Object](https://github.com/mansaout/TIL/blob/main/Javascript/02_basic_data_type.md)
+##### [다음 02. 데이터 타입 - Number, String, Undefined, Null, Boolean, Object](https://github.com/mansaout/TIL/blob/main/Javascript/02_grammar_data_type.md)

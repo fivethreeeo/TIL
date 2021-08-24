@@ -173,5 +173,5 @@ error!!
 
 <br><br>
 ---
-##### [다음 09. 함수 - 구성, 규칙, 호출, return문](https://github.com/mansaout/TIL/blob/main/Javascript/09_basic_function.md)
-##### [이전 07. 문장 - if, while, do-while, for, break, continue](https://github.com/mansaout/TIL/blob/main/Javascript/07_basic_statement.md)
+##### [다음 09. 함수 - 구성, 규칙, 호출, return문](https://github.com/mansaout/TIL/blob/main/Javascript/09_grammar_function.md)
+##### [이전 07. 문장 - if, while, do-while, for, break, continue](https://github.com/mansaout/TIL/blob/main/Javascript/07_grammar_statement.md)
