@@ -1,26 +1,23 @@
 ##### 최초작성일 : 2021. 8. 24.<br><br>
-# 01. 
-[](#)  
+# 02. Variable, Constant, Variable Types, Dynamic typing
+[Variable](#variable)  
+[]()  
+[]()  
 [Reference](#reference)
 
 <br><br>
 
-## **async vs defer**
-- parsing HTML > 한줄씩 읽으면서 DOM 요소로 변환
-- script 태그가 보이면 parsing을 멈추고 필요한 js 파일을 다운받거나 읽음 : fetching js, executing js
-- 단점: js파일이 크거나 인터넷이 느리다면 속도가 느려진다.
-- parsing HTML 완료 후 fetching, executing js 할 수있음
-- 단점: 만약에 js에 의존적이면 사용자가 의미있는 컨텐츠를 보기까지 오래걸림.
+## Variable
+- ### **`let`**
+```js
+let who = 'mansaout'
+// let으로 변수 who를 선언, 값 'mansaout'을 who에 할당
+```
+- ### **`Block Scope`**
+```js
+{} // <-- Block Scope
+```
 
-- asyn
-  - asyn은 병렬로 받음 fetching완료후 parsing을 멈추고 executing 후에 다시 parsing.
-  - js 다운로드 시간 졀약 but, parsing 전에 js가 실행됨
-
-- defer
-  - parsing 중 병렬로 받음 -> parsing이 끝난 후 executing
-
-
-## Data types
 
 
 'use strict';
@@ -58,7 +55,7 @@
         // }
         // console.log(age);
 
-// 2. Constants
+// 2. Constant
         // 한 번 할당하면 값을 변경할 수 없음
         // favor immutable data type always for a few reasons :
         // - security 보안 -> 해커들이 값을 변경
