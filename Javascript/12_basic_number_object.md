@@ -210,5 +210,4 @@ console.log(
 
 <br><br>
 ---
-##### [다음 13. 객체 - String Object](https://github.com/mansaout/TIL/blob/main/Javascript/13_basic_string_object.md)
 ##### [이전 11. 객체 - Number Object (Number(), Number상수, new 연산자 - 인스턴스 생성, new Number() - 인스턴스 형태)](https://github.com/mansaout/TIL/blob/main/Javascript/11_basic_number_object.md)

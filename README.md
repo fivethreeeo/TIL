@@ -14,10 +14,10 @@
 ## **분류**
 
 ### **Study Log**
-- [Log Timeline]()
-- ### **Javascript**
+
+- #### **Javascript**
   - #### 자바스크립트 기초
-    - 
+    - [01. ]()
   - #### 자바스크립트 문법
     - [01. 기본 문법 - 문장, 변수, 정수, 실수, 상수, 진수](https://github.com/mansaout/TIL/blob/main/Javascript/01_basic_lexical_grammar.md)
     - [02. 데이터 타입 - Number, String, Undefined, Null, Boolean, Object](https://github.com/mansaout/TIL/blob/main/Javascript/02_basic_data_type.md)
@@ -31,7 +31,7 @@
     - [10. 객체(Object) - Property 개요, 추가, 변경, 값추출, for~in문, 빌트인(Built-in) ](https://github.com/mansaout/TIL/blob/main/Javascript/10_basic_object.md)
     - [11. 객체 - Number Object (Number(), Number상수, new 연산자 - 인스턴스 생성, new Number() - 인스턴스 형태)](https://github.com/mansaout/TIL/blob/main/Javascript/11_basic_number_object.md)
     - [12. 객체 - Number Object (Primitive 값/타입, valueOf, toString(), toLocaleString(), toExponential(), toFixed())](https://github.com/mansaout/TIL/blob/main/Javascript/12_basic_number_object.md)
-    - [13. 객체 - String Object ()](https://github.com/mansaout/TIL/blob/main/Javascript/13_string_number_object.md)
+
 - ### **Git**
   - [Git Cheat Sheet](https://github.com/mansaout/TIL/blob/main/Git/git_cheat_sheet.md)
   - Git 활용 예제
