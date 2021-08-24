@@ -1,141 +1,94 @@
 ##### 최초작성일 : 2021. 8. 24.<br><br>
-# 02. Variable, Constant, Variable Types, Dynamic typing
-[Variable](#variable)  
-[]()  
-[]()  
+# Variable, Constant, Variable Types, Dynamic typing
+[Variable - let, block scope, var](#variable)  
+[Constant - const](#constant)  
+[Dynamic Typing](#dynamic-typing)  
 [Reference](#reference)
 
 <br><br>
 
-## Variable
-- ### **`let`**
+## **Variable**
+- read/write
+- mutable
+- only use let if variable needs to change
+- ### **let**
 ```js
 let who = 'mansaout'
 // let으로 변수 who를 선언, 값 'mansaout'을 who에 할당
 ```
-- ### **`Block Scope`**
+
+<br>
+
+- ### **Block Scope**
 ```js
-{} // <-- Block Scope
+{ } // Block Scope
+
+let globalName = 'global'; // Global Scope
+
+{
+  let localName = 'local';
+  console.log(globalName, localName);
+  // print: " global local "
+}
+
+console.log(globalName, localName);
+// Error: localName is not defined
 ```
 
+<br>
 
+- ### **var - don't use this**
+  - **var hoisting** : 선언이 어느 위치에 있건 제일 위로 올려줌
+  - **has no block scope** : 블록 스코프를 무시함
 
-'use strict';
+```js
+console.log(myName);
+myName = 'mansaout';
+var myName;
+// print: " mansaout "
 
-// 1. Variable
-    // let
-    // let who = 'mansaout'; //let으로 who를 선언, mansaout 값을 name1에 할당
-    // console.log(who);
-    // who = 'hello';
-    // console.log(who);
+console.log(myAge);
+myAge = 30;
+let myAge;
+// Error: myAge is not defined
+```
 
-    //Block scope
-        // let globalName = 'sangbeom';
-        // {
-        //     let smallName = 'mansaout';
-        //     console.log(smallName);
-        //     smallName = 'hello';
-        //     console.log(globalName);
-        //     console.log(smallName);
-        // }
-        // console.log(globalName);
+<br>
 
+## **Constant**
+- read only
+- immutable
+- use const whenever possible
+- ### **const**
+```js
+const daysInWeek = 7;
+const hoursInDay = 24;
 
-    // var (don't ever use this!!)
-        // 1. var hoisting (move declaration from bottom to top) : 선언을 어느위치에 있건 제일 위로 올려줌
-        // console.log(age);
-        // age = 30;
-        // var age;
-        // console.log(age);
+daysInWeek = 10;
+// Error: Assignment to constant variable.
+```
 
-        // 2. has no block scope : 블록 스코프를 무시함
-        // {
-        //     age = 10;
-        //     var age;
-        // }
-        // console.log(age);
+<br>
 
-// 2. Constant
-        // 한 번 할당하면 값을 변경할 수 없음
-        // favor immutable data type always for a few reasons :
-        // - security 보안 -> 해커들이 값을 변경
-        // - thread safety -> thread들이 동시에 돌아가는데 동시에 변수에 접근해서 값을 변경
-        // - reduce human mistakes -> 변경될 이유가 없다면 const 사용
-        // const daysInWeek = 7;
-        // const hoursInDay = 24;
+## **Dynamic Typing**
+- 선언할 때 무슨 타입인지 선언하지 않음
+- 런타임에 할당된 값에 따라 타입이 변경될 수 있음
+- 중간에 타입이 변경되어 런타임 에러가 나는 경우 발생 -> TS가 나온 이유
 
-// 3. Variable types
-    // prmitive type, single items, number, string, boolean, null, undefined, symbol
-    // object type, box container
-    // function, first-class function : function도 다른 데이터 타입 처럼 변수에 할당이 가능. 함수의 파라미터(인자)로도 전달이 되고 함수에서 리턴 타입으로도 function을 리턴하는 것이 가능하다.
+```js
+let text = '10';
+console.log(text, typeof text) // print: 10 string
 
-        // 1. number 타입
-        // 데이터 크기를 생각하고 선언을 안해도 됌 (c, java 등)
-        // 타입이 다이나믹하게 결정되기 떄문에 number타입 선언 필요 없음
-        const count = 20;
-        const size = 5.5;
-        console.log(`count's value: ${count}, count's type: ${typeof count}`);
-
-        // special number value : infinity, -infinity, NaN
-        const infinity = 1 / 0;
-        const negativeInfinity = -1 / 0;
-        const NaN1 = 0 / 0;
-        const NaN2 = 'haha' / 0;
-
-        console.log(infinity);
-        console.log(negativeInfinity);
-        console.log(NaN1);
-        console.log(NaN2);
-
-        // 2. string 타입
-        const mansaout = 'mansaout';
-        const greeting = 'hello ' + mansaout;
-        console.log(`use template literals ${greeting}`)
-
-        // 3. boolean
-        // false: 0, null, undefined, NaN, ''
-        // true: any other value
-        const canRead = true;
-        const test = 10 < 1;
-        console.log(canRead, typeof canRead);
-        console.log(test);
-
-        // 4. null
-        // 너는 null이다. 라고 지정을 해주는 것
-        let nothing = null;
-        console.log(nothing, typeof nothing);
-
-        // 5. undefined
-        // 선언은 되었지만, 아무것도 값이 지정되어있지 않음, 비었는지, 값이 있는지 등
-        let x;
-        console.log(x, typeof x);
-
-        // 6. symbol, create unique identifiers for objects
-        // 맵이나 다른 자료구조에서 고유한 식별자가 필요하거나, 동시에 다발적으로 일어날 수 있는 코드에서 우선순위를 주고싶을 때, 고유한 식별자가 필요할 때 사용. 동일한 string를 작성했어도 다른 것을 구분함
-        // string을 식별자로 쓰는 경우 동일한 이름일 경우 문제가 생김
-        const symbol1 = Symbol('id');
-        const symbol2 = Symbol('id');
-        console.log(symbol1 === symbol2);
-        //string이 똑같다면, 동일한 symbol을 만들고 싶을 때
-        const sameSymbol1 = Symbol.for('pw');
-        const sameSymbol2 = Symbol.for('pw');
-        console.log(sameSymbol1 === sameSymbol2);
-        //symbol을 출력할 때
-        console.log(symbol1.description)
-
-    // object, real-life-object, data structure
-
-// 4. Dynamic typing : dynamically typed language
-// 선언할 때 어떤 타입인지 같이 선언하지 않음. 런타임에 할당된 값에 따라 타입이 변경될 수 있음
-// 중간에 타입이 변경되어 턴타임으로 에러가 나는 경우가 있음 -> 타입스크립트가 나온 이유
-let text = 'hello';
-console.log(`값: ${text}, 타입: ${typeof text}`)
 text = 10;
-console.log(`값: ${text}, 타입: ${typeof text}`)
+console.log(text, typeof text) // print: 10 number
+
 text = 10 + '10';
-console.log(`값: ${text}, 타입: ${typeof text}`)
+console.log(text, typeof text) // print: 1010 string
+
 text = '10' * '10';
-console.log(`값: ${text}, 타입: ${typeof text}`)
+console.log(text, typeof text) // print: 100 number
+
+```
 
 
 <br><br>
@@ -145,4 +98,5 @@ console.log(`값: ${text}, 타입: ${typeof text}`)
 
 <br><br>
 ---
-##### [다음 02. ]()
+##### [Next - Variable Types - primitive types, object type]()
+##### [Prev - async vs defer]()
