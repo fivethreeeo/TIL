@@ -100,6 +100,52 @@ for (let k = 6; k > 0; k -= 2) {
 console.log(k); // Error: k is not defined
 ```
 
+<br>
+
+## Quiz - Use break and continue
+- Quiz 1
+```js
+// Q1. iterate from 0 to 10 and print only even numbers
+// (use continue)
+
+// 풀이 1
+for(i = 0; i < 11; i++) {
+    if (i === 0 || i % 2 !== 0) { // i가 0 이거나 i의 나머지가 0이 아닐 때
+        continue;
+    }
+    console.log(i);
+};
+
+// 풀이 1을 Ternary 사용
+for(i = 0; i < 11; i++) {
+    (i === 0 || i % 2 !== 0) ? undefined : console.log(i);
+}
+
+// continue를 사용하지 않았을 경우
+for(i = 0; i < 11; i++) {
+    if (i !== 0 && i % 2 === 0) { // i가 0이 아니고 i의 나머지가 0일 때
+      console.log(i);
+    }
+};
+
+// print: 2 4 6 8 10
+```
+
+<br>
+
+- Quiz 2
+```js
+// Q2. iterate from 0 to 10 and print numbers until reaching 8
+// (use break)
+
+for(i = 0; i < 11; i++) {
+    console.log(i);
+    if (i === 8) break;
+}
+
+// print: 0 1 2 3 4 5 6 7 8
+```
+
 <br><br>
 ---
 ### **Reference**
