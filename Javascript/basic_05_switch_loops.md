@@ -91,11 +91,13 @@ while: 2
 for (i = 1; i < 6; i++) {
     console.log(i); // print: 1 2 3 4 5
 }
+console.log(i); // print: 6
 
-for (let k = 6; k > 0; k = k - 2) {
+for (let k = 6; k > 0; k -= 2) {
     // inline variable declaration
     console.log(k); // print: 6 4 2
 }
+console.log(k); // Error: k is not defined
 ```
 
 <br><br>
