@@ -15,7 +15,21 @@
 
 ### **Javascript**
 - #### Javascript Basic (ES5+)
-  - [01. ]()
+  - [](https://github.com/mansaout/TIL/blob/main/Javascript/basic_01_async_vs_defer.md)
+  - [Variable, Constant, Variable Types, Dynamic typing](https://github.com/mansaout/TIL/blob/main/Javascript/basic_02_variable.md)
+  - [Variable Types - primitive types, object type](https://github.com/mansaout/TIL/blob/main/Javascript/basic_03_variable_type.md)
+  - [Operator](https://github.com/mansaout/TIL/blob/main/Javascript/basic_04_operator.md)
+  - [Switch, Loops](https://github.com/mansaout/TIL/blob/main/Javascript/basic_05_switch_loops.md)
+  - [](https://github.com/mansaout/TIL/blob/main/Javascript/basic_06_.md)
+  - [](https://github.com/mansaout/TIL/blob/main/Javascript/basic_07_.md)
+  - [](https://github.com/mansaout/TIL/blob/main/Javascript/basic_08_.md)
+  - [](https://github.com/mansaout/TIL/blob/main/Javascript/basic_09_.md)
+  - [](https://github.com/mansaout/TIL/blob/main/Javascript/basic_10_.md)
+  - [](https://github.com/mansaout/TIL/blob/main/Javascript/basic_11_.md)
+  - [](https://github.com/mansaout/TIL/blob/main/Javascript/basic_12_.md)
+  - [](https://github.com/mansaout/TIL/blob/main/Javascript/basic_13_.md)
+  - [](https://github.com/mansaout/TIL/blob/main/Javascript/basic_14_.md)
+  - [](https://github.com/mansaout/TIL/blob/main/Javascript/basic_15_.md)
 - #### [PAUSED]Javascript 문법 정리
   - [01. 기본 문법 - 문장, 변수, 정수, 실수, 상수, 진수](https://github.com/mansaout/TIL/blob/main/Javascript/01_grammar_lexical_grammar.md)
   - [02. 데이터 타입 - Number, String, Undefined, Null, Boolean, Object](https://github.com/mansaout/TIL/blob/main/Javascript/02_grammar_data_type.md)

@@ -1,14 +1,14 @@
 ##### 최초작성일 : 2021. 8. 24.<br><br>
 # Operator
 [String concatemation](#string-concatenation)  
-[Numberic operators](#numberic-operators)  
-[Increment & Decrement operators](#increment--decrement-operators)  
-[Assignment operators](#assignment-operators-------)  
-[Comparison operators](#comparison-operators)  
-[Logical operators: ||(or), &&(and), !(not)](#logical-operators-or-and-not)  
-[Equality operator](#equality-operator)  
-[Conditional operators: if](#conditional-operators-if)  
-[Ternary operator: ?](#ternary-operator-)  
+[Numberic](#numberic-operators)  
+[Increment & Decrement](#increment--decrement-operators)  
+[Assignment](#assignment-operators-------)  
+[Comparison](#comparison-operators)  
+[Logical: ||(or), &&(and), !(not)](#logical-operators-or-and-not)  
+[Equality](#equality-operator)  
+[Conditional: if](#conditional-operators-if)  
+[Ternary: ?](#ternary-operator-)  
 [Reference](#reference)
 
 <br><br>
