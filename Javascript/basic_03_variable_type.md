@@ -116,7 +116,7 @@ console.log(nothing, typeof nothing); print: undefined undefined
 <br>
 
 ## Symbol 타입
-- create unique indentifiers for objects
+- create unique identifiers for objects
 - 맵이나 다른 자료 구조에서 고유한 식별자가 필요하거나, 동시 다발적으로 발생하는 코드에서 우선순위를 주기위한 고유한 식별자가 필요할 때 사용
 
 ```js
