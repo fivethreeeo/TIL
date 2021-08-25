@@ -36,7 +36,7 @@ switch (browser) {
 // print: come here!
 ```
 
-
+<br>
 
 ## Loops
 #### - **`while`** : while the condition is truthy, body code is executed.
@@ -59,7 +59,8 @@ while (i > 0) {
 <br>
 
 #### - **`do while`**
-  - while 이 true인 동안 do를 실행, while이 false인 순간 while 실행
+  -  1 - while the condition is truthy, Do 실행!
+  -  2 - the condition true to false, While 실행!
 
 ```js
 let i = 6;
