@@ -13,7 +13,7 @@
 - only use let if variable needs to change
 - ### **let**
 ```js
-let who = 'mansaout'
+let who = 'mansaout';
 // let으로 변수 who를 선언, 값 'mansaout'을 who에 할당
 ```
 
