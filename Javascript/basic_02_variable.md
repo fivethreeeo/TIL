@@ -42,14 +42,14 @@ console.log(globalName, localName);
   - **has no block scope** : 블록 스코프를 무시함
 
 ```js
-console.log(myName);
 myName = 'mansaout';
 var myName;
-// print: " mansaout "
+console.log(myName);
+// print: mansaout
 
-console.log(myAge);
 myAge = 30;
 let myAge;
+console.log(myAge);
 // Error: myAge is not defined
 ```
 
