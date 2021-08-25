@@ -32,7 +32,7 @@
   ```
 
   - object 타입은 값 자체가 메모리에 바로 저장되지 않음
-    - 오브젝트를 가리키는 곳에 reference가 있고 reference가 실제 오브젝트가 담겨있는 메모리는 가리킴
+    - 오브젝트를 가리키는 곳에 reference가 있고 reference가 실제 오브젝트가 담겨있는 메모리 가리킴
 
   ```js
   let he = {name: mansa, age: 30}
