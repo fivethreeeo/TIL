@@ -23,7 +23,7 @@
 
 ## Function expression
 
-- a function declaration can be called earlier than it is defined. (hoisted)
+- a function declaration can be called earlier than it is defined. **(hoisted)**
 - a function expression is created when the execution reaches it.
 - anonymous function
 - named function
@@ -96,7 +96,7 @@ const printName = function () {
 };
 
 // using Arrow function
-const ShortSimplePrint = () => console.log('Name!!');
+const printName = () => console.log('Name!!');
 
 const sumArgument = function (a, b, c) {
   // required "return" in Block
