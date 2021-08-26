@@ -9,6 +9,8 @@
 [Constructor functon](#constructor-function)  
 [Reference](#reference)
 
+<br><br>
+
 ## Object ?
 
 - one of the JavaScript's data types.

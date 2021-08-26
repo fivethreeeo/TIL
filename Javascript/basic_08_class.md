@@ -11,6 +11,8 @@
 [instanceOf operator](#instanceof-operator)  
 [Reference](#reference)
 
+<br><br>
+
 ## Object-oriented programming
 
 - class: template
