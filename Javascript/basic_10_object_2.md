@@ -2,11 +2,10 @@
 
 # Object - in operator, for..in, for..of, cloning
 
-[in operator](#in-operator)
-[for..in](#forin)
-[for..of](#forof)
-[Cloning](#cloning)
-
+[in operator](#in-operator)  
+[for..in](#forin)  
+[for..of](#forof)  
+[Cloning](#cloning)  
 [Reference](#reference)
 
 <br><br>
