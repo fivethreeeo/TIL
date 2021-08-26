@@ -2,13 +2,13 @@
 
 # Class declaration, getter & setter, fields, static, inheritance, instanceOf
 
-[Object-oriented programming ?]()  
-[Class Declaration]()  
-[Getter & Setter]()  
-[Fields (public, private)]()  
-[Static property and method]()  
-[Inheritance]()  
-[instanceOf operator]()  
+[Object-oriented programming ?](#object-oriented-programming)  
+[Class Declaration](#class-declaration)  
+[Getter & Setter](#getter--setter)  
+[Fields (public, private)](#fields-public-private)  
+[Static property and method](#static-property-and-method)  
+[Inheritance](#inheritance)  
+[instanceOf operator](#instanceof-operator)  
 [Reference](#reference)
 
 ## Object-oriented programming
