@@ -1,128 +1,132 @@
 ##### 최초작성일 : 2021. 8. 25.<br><br>
 
-# Function Declaration, Parameters
+# Function declaration, Parameters
 
-[]()  
-[]()  
-[]()  
-[]()  
+[Function ?](#function)  
+[Function declaration](#function-declaration-함수-선언)  
+[Parameters](#parameters)  
+[Default parameters](#default-parameters-added-in-es6)  
+[Rest parameters](#rest-parameters-added-in-es6)  
 [Reference](#reference)
 
 <br><br>
 
-// Function
-// - fundamental building block in the program
-// - subprogram can be used mulitple times 서브프로그램이라고도 불림
-// - performs a task or calculates a value 한 가지의 테스크나 값을 계산하기 위해
+## Function
 
-//------------- 1. Function declaration 함수 선언
-// 형태: function name(param1, param2) { body... return; }
-// one function === one thing
-// naming : doSomething, command, verb
-// e.g createCardAndPoint -> createCard, createPoint
-// function is object in JS
-// 그래서 printHello.-- 으로 함수 속성 값 확인 가능
+- fundamental building block in the program
+- called subprogram can be used mulitple times
+- performs a task or calculates a value
+- function is object in JS
+
+<br>
+
+## Function declaration
+
+- 형태: `function name(param1, param2) { body... return; }`
+- one function === one thing
+- naming : doSomething (command, verb)
+- e.g createCardAndPoint seq-> createCard, createPoint
+
+```js
+// 함수 기본 형태와 호출
 
 function printHello() {
-console.log('Hello');
+  console.log('Hello');
 }
-printHello(); // 함수 호출. Hello 출력밖에 못함.
+printHello(); // 함수 printHello를 호출.
+// print: Hello
+```
 
-// 타입 선언 x, message가 string을 전달해야하는지 등 알 수 없음
+```js
+// 타입 선언 x
+// message가 string을 전달해야하는지 등 알 수 없음
+
 function log(message) {
-console.log(message);
+  console.log(`message: ${message}`);
 }
+
 log('Mansaout');
+// print: message: Mansaout
+```
 
-// in TS 파라미터 타입, 리턴 타입을 선언
-// function log(message: string): number {
-// console.log(message);
-// return 0;
-// }
+```typescript
+// in TS
+// 파라미터 타입, 리턴 타입을 선언
 
-//------------- 2. Parameters
-// - premitive parameters: passed by value
-// - object parameters: passed by reference
-
-function changeName(obj) {
-// changeName 함수는 전달 받은 obj의 name의 값을 'coder'로 change
-obj.name = 'coder';
-console.log(obj);
+function log(message: string): number {
+  console.log(message);
+  return 0;
 }
+```
+
+<br>
+
+## Parameters
+
+- premitive parameters: passed by value
+- object parameters: passed by reference
+
+```js
+function changeName(obj) {
+  // 전달 받은 obj의 name의 값을 'coder'로 change
+  obj.name = 'coder';
+  console.log(obj);
+}
+
 const mansaout = { name: 'heo' };
 changeName(mansaout);
+// print: {name: "coder"}
+```
 
-//------------- 3. Default Parameters (added in ES6)
-function showMessage1(message, from) {
-console.log(`${message} by ${from}`);
+<br>
+
+## Default Parameters (added in ES6)
+
+```js
+// 1.
+// 인자가 전달되지 않을 경우 => undefined 출력
+function showMessage(message, from) {
+  console.log(`${message} by ${from}`);
 }
-showMessage1('Hello'); //입력 안하면 undefined
+showMessage('Hello'); // print: Hello by undefined
 
-function showMessage2(message, from = 'unknown') {
-//default 값 지정
-console.log(`${message} by ${from}`);
+// 2.
+// 인자가 전달되지 않을 경우의
+// default값을 지정 => from = 'unknown'
+function showMessage(message, from = 'unknown') {
+  console.log(`${message} by ${from}`);
 }
-showMessage2('Hello');
+showMessage('Hello'); // print: Hello ny unknown
+```
 
-//------------- 4. Rest Parameters (added in ES6)
-// 배열 형태로 전달
-// 3개가 담겨있는 배열. 배열의 갯수만큼 출력
+<br>
+
+## Rest Parameters (added in ES6)
+
+- 배열 형태로 전달
+
+```js
 function printAll(...args) {
-for (let i = 0; i < args.length; i++) {
-console.log(args[i]);
+  // 1. ...args
+  // 배열의 수 만큼 출력
+  for (let i = 0; i < args.length; i++) {
+    console.log(args[i]);
+  }
+
+  // 2.
+  // args 의 arg를 하나씩 출력
+  for (const arg of args) {
+    console.log(arg);
+  }
+
+  // 3.
+  // forEach() 사용
+  args.forEach((arg) => console.log(arg));
 }
 
-//args의 arg를 하나씩 출력
-for (const arg of args) {
-console.log(arg);
-}
-
-args.forEach((arg) => console.log(arg));
-}
 printAll('one', 'two', 'three');
+```
 
-//------------- 5. Local Scope
-// 밖에서는 안이 보이지 않고
-// 안에서만 밖을 볼 수 있다.
-
-let globalMessage = 'global'; // global variable
-function printMessage() {
-let message = 'hello'; // local variable
-console.log(globalMessage);
-console.log(message);
-}
-printMessage();
-
-console.log(globalMessage);
-//console.log(message); // Error: message is not defined
-
-//------------- 6. Return a value
-// return이 없는 함수는 return undefined 생략
-function sum(a, b) {
-return a + b;
-}
-const result = sum(1, 2);
-console.log(result); // print: 3
-
-//------------- 7. Early return, early exit
-// 조건이 맞지 않는 경우,
-// 값이 undefined인 경우,
-// 값이 -1인 경우
-// -> 빨리 return을 하고 필요한 로직 실행
-//bad
-function upgradeUser(user) {
-if (user.point > 10) {
-// long upgrade logic...
-}
-}
-
-//good
-function upgradeUser(user) {
-if (user.point <= 10) {
-return;
-}
-// long upgrade logic...
-}
 <br><br>
 
 ---
@@ -131,8 +135,8 @@ return;
 
 - [자바스크립트 기초 강의 (ES5+), 드림코딩 by 엘리](https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2)
 
-## <br><br>
+<br><br>
 
-##### [Next - ]()
+##### [Next - Function expression, CallBack, Arrow, IIFE](/Javascript/basic_07_first_class_function.md)
 
-##### [Prev - Operator]()
+##### [Prev - Switch, Loops](/Javascript/basic_05_switch_loops.md)

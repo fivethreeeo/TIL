@@ -1,114 +1,193 @@
 ##### 최초작성일 : 2021. 8. 25.<br><br>
 
-# Function Expression, CallBack, Arrow
+# Function expression, CallBack, Arrow, IIFE
 
-[]()  
-[]()  
-[]()  
-[]()  
+[First-class function](#first-class-function)  
+[Function expression](#function-expression)  
+[Callback function](#callback-function)  
+[Arrow function](#arrow-function)  
+[IIFE](#IIFE)  
+[Quiz](#quiz)  
 [Reference](#reference)
 
 <br><br>
 
-// First-class function
-// - functions are treated like any other variable
-// - can be assigned as a value to variable // 변수의 값으로 할당되고
-// - can be passed as an argument to other functions //함수의 파라미터로 전달되고
-// - can be returned by another function // 리턴 값으로도 리턴이 된다
+## First-class function
 
-//------------- 1. Function expression
-// a function declaration can be called earlier than it is defined. (hoisted)
-// a function expression is created when the execution reaches it.
+- functions are treated like any other variable
+- can be assigned as a value to variable
+- can be passed as an argument to other functions
+- can be returned by another function
+
+<br>
+
+## Function expression
+
+- a function declaration can be called earlier than it is defined. (hoisted)
+- a function expression is created when the execution reaches it.
+- anonymous function
+- named function
+
+```js
+// Uncaught ReferenceError:
+// Cannot access 'print' before initialization
+
+print();
+
+// function expression
 // anonymous function
-// named function
-
-//print(); // Uncaught ReferenceError: Cannot access 'print' before initialization
 const print = function () {
-// anonymous function
-console.log('print');
+  console.log('print');
 };
+```
 
-const printAgain = print;
-printAgain();
+```js
+print(); //print: Print Success
 
-declarPrint();
-function declarPrint() {
-console.log('declar print');
+// function declaration
+// named function
+function print() {
+  console.log('Print Success');
 }
+```
 
-//------------- 2. Callback function using function expression
-//파라미터로 함수를 불러서 필요하면 함수를 사용할 수 있게 하는 것
+<br>
+
+## Callback function
+
+- Callback function using function expression
+- 이름 그대로 나중에 호출
+- 특정 이벤트 발생, 특정 시점에 도달했을 때 시스템에서 호출하는 함수
+
+```js
 function randomQuiz(answer, printYes, printNo) {
-// printYes, printNo -> callback Function
-if (answer === 'correct') {
-printYes();
-} else {
-printNo();
-}
+  // printYes, printNo -> callback function
+  // passed as an argument to other functions
+  if (answer === 'correct') {
+    printYes();
+  } else {
+    printNo();
+  }
 }
 
 const printYes = function () {
-// 변수에 함수 할당
-console.log('good');
+  console.log('good');
 };
 
 const printNo = function print() {
-// named function
-// better debugging in debugger's stack traces
-// recursions
-console.log('bad');
-//print() : recursion 함수가 자기 스스로를 부르는 것
+  // named function
+  console.log('bad');
+  print(); // recursion: 자기 스스로를 호출
 };
 
-randomQuiz('correct', printYes, printNo);
-randomQuiz('wrong', printYes, printNo);
+randomQuiz('correct', printYes, printNo); // print: good
+randomQuiz('wrong', printYes, printNo); // print: bad
+```
 
-//------------- Arrow function
-// always anonymous
+<br>
 
-const simplePrint = function () {
-console.log('simplePrint!');
+## Arrow function
+
+- always anonymous function
+
+```js
+const printName = function () {
+  console.log('Name!!');
 };
 
-const ShortSimplePrint = () => console.log('simplePrint!');
+// using Arrow function
+const ShortSimplePrint = () => console.log('Name!!');
 
-const add2 = function (a, b) {
-return a + b; //block인 경우 블럭을 꼭 사용
+const sumArgument = function (a, b, c) {
+  // required "return" in Block
+  return a + b + c;
 };
 
-const add = (a, b) => a + b;
+// using Arrow fucntion
+// "return" can be omitted
+const sumArgument = (a, b, c) => a + b + c;
+```
 
-//------------- IIFE
-// 함수를 선언과 동시에 실행하고 싶을 경우
-// 함수를 ()로 감싸고 뒤에 ();
+<br>
+
+## IIFE
+
+- Function declaration and execution at the same time
+
+```js
+// ( function() ) ();
+
 (function doIIFE() {
-console.log('DO IIFE!!');
+  console.log('DO IIFE!!');
 })();
 
-// //Quiz
-// //function calculate(command, a, b)
-// //command: (add, substract, divide,multiply, remainder)
+// print: DO IIFE!!
+```
 
-// //콜백함수 사용 -> add, substract, divide, multiply, remainder 에 각각 함수를 할당해 파라미터로 가져올 수 있게
+<br>
 
-// function calculate(command, a, b) {
-// command(a, b);
-// }
+## Quiz
 
-// // const add = (a, b) => a + b;
-// // const substract = (a, b) => a - b;
-// // const multiply = (a, b) => a \* b;
-// // const remainder = (a, b) => a / b;
+```js
+// Q. 아래의 command를 사용해 계산을 수행하는 function을 만들자.
+//
+// function calculate(command, a, b)
+// command: (add, substract, divide,multiply, remainder)
+```
 
-// const add = (a, b) => console.log(a + b);
-// const substract = (a, b) => console.log(a - b);
-// const multiply = (a, b) => console.log(a \* b);
-// const remainder = (a, b) => console.log(a / b);
+```js
+// 풀이 1
+//
+// command를 callback 으로 만듬
+// calculate() 호출하면 a, b를 계산하는 함수 실행
 
-// calculate(add, 1, 2);
-// calculate(substract, 1, 2);
-// calculate(multiply, 1, 2);
-// calculate(remainder, 1, 2);
+function calculate(command, a, b) {
+  console.log(command(a, b));
+}
+
+const add = (a, b) => a + b;
+const substract = (a, b) => a - b;
+const multiply = (a, b) => a * b;
+const remainder = (a, b) => a % b;
+
+calculate(add, 1, 2); // print: 3
+calculate(substract, 1, 2); // print: -1
+calculate(multiply, 1, 2); // print: 2
+calculate(remainder, 1, 2); // print: 1
+```
+
+```js
+// 풀이 2
+//
+// switch 문을 사용
+// command를 각각 case로 만듬
+// 해당 command일 때 그 command에 맞게 계산하고 종료
+
+function calculate(command, a, b) {
+  switch (command) {
+    case add:
+      console.log(a + b);
+      break;
+    case substract:
+      console.log(a - b);
+      break;
+    case multiply:
+      console.log(a * b);
+      break;
+    case remainder:
+      console.log(a % b);
+      break;
+    default:
+      console.log('wrong command!');
+      break;
+  }
+}
+
+calculate(add, 1, 2); // print: 3
+calculate(substract, 1, 2); // print: -1
+calculate(multiply, 1, 2); // print: 2
+calculate(remainder, 1, 2); // print: 1
+```
 
 <br><br>
 
@@ -120,6 +199,6 @@ console.log('DO IIFE!!');
 
 ## <br><br>
 
-##### [Next - ]()
+##### [Next - Class declaration, getter & setter, fields, static, inheritance, instanceOf](/Javascript/basic_08_class.md)
 
-##### [Prev - Operator]()
+##### [Prev - Function declaration, Parameters](/Javascript/basic_06_function.md)
