@@ -28,6 +28,7 @@
   - [Class declaration, getter & setter, fields, static, inheritance, instanceOf](/Javascript/basic_08_class.md)
   - [Object - literals and properties, computed properties, property value shorthand, constructor function](/Javascript/basic_09_object_1.md)
   - [Object - in operator, for..in, for..of, cloning](/Javascript/basic_10_object_2.md)
+  - [Array - Declaration, index, loop, addition, deletion, searching](/Javascript/basic_11_array.md)
 
 - #### [paused]Javascript Grammar
 

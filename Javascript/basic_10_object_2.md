@@ -147,6 +147,6 @@ console.log(mix.size); // size: small
 
 ## <br><br>
 
-##### [Next - ]()
+##### [Next - Array - Declaration, index, loop, addition, deletion, searching](/Javascript/basic_11_array.md)
 
 ##### [Prev - Object - literals and properties, computed properties, property value shorthand, constructor function](/Javascript/basic_09_object_1.md)
