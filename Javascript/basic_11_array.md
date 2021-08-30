@@ -145,12 +145,19 @@ console.log(newBalls);
 const balls = ['🏀', '⚽️', '🎾', '🏐', '🏈', '⚽️'];
 
 // indexOf : find the index from beginning
+// if it is not present => return -1
 console.log(balls.indexOf('⚽️'));
-// print: 1
+console.log(balls.indexOf(''));
+// print:
+// 1
+// -1
 
 // lastIndexOf : find the index from end
 console.log(balls.lastIndexOf('⚽️'));
-// print: 5
+console.log(balls.lastIndexOf(''));
+// print
+// 5
+// -1
 
 // includes : true or false
 console.log(balls.includes('🎾'));
