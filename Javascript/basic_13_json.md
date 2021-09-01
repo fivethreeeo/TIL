@@ -125,4 +125,4 @@ console.log(obj2.birthDate.getDate()); // print: 31
 
 ##### [Next - Callback](/Javascript/basic_14_callback.md)
 
-##### [Prev - ](/Javascript/basic_12_array_api.md)
+##### [Prev - Array APIs - join(), slpit(), reverse(), slice(), find(), filter(), map(), some(), every(), reduce()](/Javascript/basic_12_array_api.md)

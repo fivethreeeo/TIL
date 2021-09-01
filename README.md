@@ -29,8 +29,10 @@
   - [Object - literals and properties, computed properties, property value shorthand, constructor function](/Javascript/basic_09_object_1.md)
   - [Object - in operator, for..in, for..of, cloning](/Javascript/basic_10_object_2.md)
   - [Array - Declaration, index, loop, addition, deletion, searching](/Javascript/basic_11_array.md)
-  - [JSON - Object to JSON, JSON to Object](/Javascript/basic_13_json.md)
-  - [JSON - Callback](/Javascript/basic_14_callback.md)
+  - [Json - Object to JSON, JSON to Object](/Javascript/basic_13_json.md)
+  - [Callback](/Javascript/basic_14_callback.md)
+  - [Promise, Callback to Promise](/Javascript/basic_15_promise.md)
+  - [async & await, all(), race()](/Javascript/basic_16_async_await.md)
 
 - #### [paused]Javascript Grammar
 
