@@ -141,11 +141,11 @@ userStorage.loginUser(
 
 - [자바스크립트 기초 강의 (ES5+), 드림코딩 by 엘리](https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2)
 
-## <br><br>
+<br><br>
 
-##### [Next - ]()
+##### [Next - Promise, Callback to Promise](/Javascript/basic_15_promise.md)
 
-##### [Prev - Array - Declaration, index, loop, addition, deletion, searching](/Javascript/basic_11_array_api.md)
+##### [Prev - JSON - Object to JSON, JSON to Object](/Javascript/basic_13_json.md)
 
 ```
 

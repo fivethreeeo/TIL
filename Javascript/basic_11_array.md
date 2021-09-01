@@ -172,8 +172,8 @@ console.log(balls.includes('🎾'));
 
 - [자바스크립트 기초 강의 (ES5+), 드림코딩 by 엘리](https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2)
 
-## <br><br>
+<br><br>
 
-##### [Next - ]()
+##### [Next - ](/Javascript/basic_12_array_api.md)
 
-##### [Prev - Object - literals and properties, computed properties, property value shorthand, constructor function](/Javascript/basic_09_object_1.md)
+##### [Prev - Object - in operator, for..in, for..of, cloning](/Javascript/basic_10_object_2.md)

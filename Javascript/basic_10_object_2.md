@@ -145,7 +145,7 @@ console.log(mix.size); // size: small
 
 - [자바스크립트 기초 강의 (ES5+), 드림코딩 by 엘리](https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2)
 
-## <br><br>
+<br><br>
 
 ##### [Next - Array - Declaration, index, loop, addition, deletion, searching](/Javascript/basic_11_array.md)
 

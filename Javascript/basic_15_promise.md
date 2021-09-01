@@ -1,95 +1,186 @@
 ##### 최초작성일 : 2021. 8. 31.<br><br>
 
-#
+# Promise, Callback to Promise
 
-[JavaScript is synchronous](#javascript-is-synchronous)  
-[Callback](#callback)  
+[Promise](#promise)  
+[Producer](#producer)  
+[Consumer](#consumer)  
+[Promise chaining](#promise-chaining)  
+[Error Handing](#error-handling)  
+[Callback to Promise](#callback-to-promise)  
 [Reference](#reference)
 
 <br><br>
 
-'use-strict';
+## Promise
 
-// 프로미스 : 비동기 간편하게 처리할 수 있게 도와주는 오브젝트
-// 성공/실패 시 값/에러를 반환해줌
+- Promise is a JavaScript object for asynchronous operation
+- 비동기를 간편하게 처리할 수 있게 도와주는 오브젝트
+- 성공/실패 시 값/에러를 반환
+- state : pending -> funfilled or rejected
+- producer(정보 제공자)
+- consumer(정보 소비자) : then, catch, finally
 
-// Promise is a JavaScript object for asynchronous operation
+<br>
 
-// 1. state (상태, 프로세스가 기능 수행 중인지 성공했는지 실패했는지)
-// 2. producer(정보 제공자) & consumer(정보 소비자)
+### Producer
 
-// State: pending -> fulfilled or rejected
-// Producer vs Consumer
+- When new promise is created, the executor runs automatically
+- 프로미스가 만들어지는 순간 executor 콜백 함수가 바로 수행
 
-// 1. Producer
-// when new promise is created, the executor runs automatically.
-// 프로미스가 만들어지는 순간 excutor라는 콜백함수가 바로 수행한다. 주의!
+```js
 const promise = new Promise((resolve, reject) => {
-// doing some heavy work (network, read files)
-console.log('doing something...');
-setTimeout(() => {
-resolve('mansa');
-reject(new Error('no network'));
-}, 2000);
+  // doing some heavy work (network, read files)
+  console.log('doing something...1');
+
+  setTimeout(() => {
+    resolve(console.log('doing something...2'));
+    reject(new Error('no network'));
+  }, 2000);
+  console.log('doing something...3');
 });
 
-// 2. Consumer : then, catch, finally
-// then은 성공했을 때(resolve)
-// catch는 에러상황 (reject)
-// finally 성공 실패 상황 없이 출력
-//
-promise //
-.then((value) => {
-console.log(value);
-})
-.catch((error) => {
-console.log(error);
-})
-.finally(() => {
-console.log('finally');
+// print:
+// doing something...1
+// doing something...2
+// doing something...3
+```
+
+<br>
+
+### Consumer
+
+- then 성공했을 때 (resolve)
+- catch 에러상황일 때 (reject)
+- finally 성공, 에러 상관없이 출력
+
+```js
+const promise = new Promise((resolve, reject) => {
+  console.log('doing something...1');
+
+  setTimeout(() => {
+    resolve('sucess');
+    reject(new Error('fail'));
+  }, 2000);
 });
 
-// 3. Promise chaining
-// then은 값 또는 promise 전달 가능
+promise
+  .then((value) => {
+    console.log(value);
+  }) // then(console.log) 축약 가능
+  .catch((error) => {
+    console.log(error);
+  }) // catch(console.log) 축약 가능
+  .finally(() => {
+    console.log('finally');
+  }); // finally(console.log) 축약 가능
+
+// print:
+// doing something...1
+// sucess
+// finally
+```
+
+<br>
+
+### Promise chaining
+
+- then은 값 또는 promise 전달 가능
+
+```js
 const fetchNumber = new Promise((resolve, reject) => {
-setTimeout(() => resolve(1), 1000);
+  setTimeout(() => resolve(1), 1000);
 });
 
 fetchNumber
-.then((num) => num _ 2)
-.then((num) => num _ 3)
-.then((num) => {
-return new Promise((resolve, reject) => {
-setTimeout(() => resolve(num - 1), 1000);
-});
-})
-.then((num) => console.log(num));
+  .then((num) => num * 2)
+  .then((num) => num * 3)
+  .then((num) => {
+    // 프로미스 전달
+    return new Promise((resolve, reject) => {
+      setTimeout(() => resolve(num - 1), 1000);
+    });
+  })
+  .then((num) => console.log(num));
 
-// 4. Error Handling
+// print: 5
+```
+
+<br>
+
+### Error Handling
+
+```js
 const getHen = () =>
-new Promise((resolve, reject) => {
-setTimeout(() => resolve('🐓'), 1000);
-});
+  new Promise((resolve, reject) => {
+    setTimeout(() => resolve('🐓'), 1000);
+  });
 
 const getEgg = (hen) =>
-new Promise((resolve, reject) => {
-setTimeout(() => resolve(`${hen} => 🥚`), 1000);
-});
+  new Promise((resolve, reject) => {
+    //setTimeout(() => resolve(`${hen} => 🥚`), 1000);
+    setTimeout(() => reject(new Error(`error on '${hen} => 🥚'`)), 1000);
+  });
 
 const cook = (egg) =>
-new Promise((resolve, reject) => {
-setTimeout(() => resolve(`${egg} => 🍳`), 1000);
-});
-
-getHen()
-.then((hen) => getEgg(hen))
-.then((egg) => cook(egg))
-.then((meal) => console.log(meal));
+  new Promise((resolve, reject) => {
+    setTimeout(() => resolve(`${egg} => 🍳`), 1000);
+  });
 
 getHen() //
-.then(getEgg)
-.then(cook)
-.then(console.log);
+  .then(getEgg)
+  .catch((error) => '🌼') // Error일 경우 꽃 반환
+  .then(cook)
+  .then(console.log);
+//.catch(console.log) // Error 출력
+```
+
+<br>
+
+### Callback to Promise
+
+```js
+'use-strict';
+
+class UserStorage {
+  loginUser(id, password) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (
+          (id === 'mansa' && password === 'out') ||
+          (id === 'heo' && password === 'heo')
+        ) {
+          resolve(id);
+        } else {
+          reject(new Error('user not found'));
+        }
+      }, 1000);
+    });
+  }
+
+  getRoles(user) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (user === 'mansa') {
+          resolve({ name: 'mansa', role: 'admin' });
+        } else {
+          reject(new Error('user have no access'));
+        }
+      }, 1000);
+    });
+  }
+}
+
+const userStorage = new UserStorage();
+
+const id = prompt('enter your id');
+const password = prompt('enter your password');
+
+userStorage
+  .loginUser(id, password)
+  .then(userStorage.getRoles)
+  .catch(console.log); // 에러 출력
+```
 
 <br><br>
 
@@ -99,12 +190,8 @@ getHen() //
 
 - [자바스크립트 기초 강의 (ES5+), 드림코딩 by 엘리](https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2)
 
-## <br><br>
+<br><br>
 
-##### [Next - ]()
+##### [Next - async & await, all(), race()](/Javascript/basic_16_async_await.md)
 
-##### [Prev - Array - Declaration, index, loop, addition, deletion, searching](/Javascript/basic_11_array_api.md)
-
-```
-
-```
+##### [Prev - Callback](/Javascript/basic_14_callback.md)

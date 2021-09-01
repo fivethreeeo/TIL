@@ -106,7 +106,7 @@ console.log(text, typeof text); // print: 100 number
 
 - [자바스크립트 기초 강의 (ES5+), 드림코딩 by 엘리](https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2)
 
-## <br><br>
+<br><br>
 
 ##### [Next - Variable Types - primitive types, object type](/Javascript/basic_03_variable_type.md)
 

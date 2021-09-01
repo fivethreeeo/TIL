@@ -162,7 +162,7 @@ const person5 = new Person('name5', 5);
 
 - [자바스크립트 기초 강의 (ES5+), 드림코딩 by 엘리](https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2)
 
-## <br><br>
+<br><br>
 
 ##### [Next - Object - in operator, for..in vs for..of, cloning](/Javascript/basic_10_object_2.md)
 
