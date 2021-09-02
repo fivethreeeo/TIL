@@ -11,6 +11,7 @@
 [Equality](#equality-operator)  
 [Conditional: if](#conditional-operators-if)  
 [Ternary: ?](#ternary-operator-)  
+[Nullish Coalescing: ??]()  
 [Reference](#reference)
 
 <br><br>
@@ -204,13 +205,65 @@ whatName('unknown'); // print: who are you?
 - 길거나 복잡해지는 코드는 가독성이 떨어저 `if` 나 `switch` 를 사용 권장
 
 ```js
-function youngOld(age) {
-  age < 30
-    ? console.log(`${age}? You're young.`)
-    : console.log(`${age}? You're old.`);
+const isCat = true;
+let checkIsCat;
+
+// ❌ bad code
+{
+  if (isCat) {
+    checkIsCat = 'cat!!';
+  } else {
+    checkIsCat = 'no cat!!';
+  }
+  console.log(checkIsCat);
 }
-youngOld(10); // print: 10? You're young.
-youngOld(1000); // print: 1000? You're old.
+
+// ✅ good code
+{
+  isCat ? 'cat!!' : 'no cat!!';
+  console.log(checkIsCat);
+}
+```
+
+<br>
+
+## Nullish Coalescing Operator
+
+- ES11에 추가
+- null, undefined 인 경우만 오른쪽으로 이동
+- ||, && 의 대체
+
+```js
+const name = '';
+const name2 = null;
+const name3 = 0;
+
+{
+  // ❌ Problem
+  // null 또는 undefined 에만 적용시키고 싶은데
+  // 0, -1, '' 문자열에도 적용됨
+  const name = '';
+  const userName = name || 'Guest';
+  console.log(userName); // print: Guest
+}
+{
+  // ✅ good code
+  const userName = name ?? 'Guest';
+  const userName2 = name2 ?? 'Guest';
+  const userName3 = name3 ?? 'Guest';
+
+  console.log(userName); // print: ''
+  console.log(userName2); // print: Guest
+  console.log(userName3); // print: 0
+}
+{
+  // ✅ 실행된 값을 할당할 때도 사용
+  const getSomething1 = () => null;
+  const getSomething2 = () => 'something!';
+
+  const result = getSomething1() ?? getSomething2();
+  console.log(result); //print: something!
+}
 ```
 
 <br><br>

@@ -82,6 +82,8 @@ changeName(mansaout);
 
 ## Default Parameters (added in ES6)
 
+- 값이 `undefined` 경우만!!
+
 ```js
 // 1.
 // 인자가 전달되지 않을 경우 => undefined 출력
@@ -97,6 +99,13 @@ function showMessage(message, from = 'unknown') {
   console.log(`${message} by ${from}`);
 }
 showMessage('Hello'); // print: Hello ny unknown
+
+// 3.
+// null ?
+function printMessage(message = 'default message') {
+  console.log(message);
+}
+printMessage(null); // print: null
 ```
 
 <br>
