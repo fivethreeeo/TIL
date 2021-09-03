@@ -113,7 +113,7 @@ console.log(k); // Error: k is not defined
 
 <br>
 
-## Quiz - Use break & continue
+## Quiz
 
 - Quiz 1
 
@@ -164,7 +164,81 @@ for (i = 0; i < 11; i++) {
 // print: 0 1 2 3 4 5 6 7 8
 ```
 
-<br><br>
+<br>
+
+- Quiz 3
+
+```js
+// hello 100번 출력 using while
+{
+  let i = 0;
+  while (i < 100) {
+    console.log('Hello');
+    i++;
+  }
+}
+
+// hello 100번 출력 using for
+{
+  for (let i = 0; i < 100; i++) {
+    console.log('hello');
+  }
+}
+
+// 1~100까지 출력 10을 찾으면 멈춤
+{
+  for (let i = 1; i < 100; i++) {
+    console.log(i);
+    if (i === 10) {
+      break;
+    }
+  }
+}
+```
+
+<br>
+
+- Quiz 4. 구구단 출력
+
+```js
+// 함수형 1
+{
+  const gugudan = (dan) => {
+    console.log(`${dan} 단`);
+    for (let mult = 1; mult < 10; mult++) {
+      console.log(`${dan} x ${mult} = ${dan * mult}`);
+    }
+  };
+  gugudan(1);
+}
+
+// 함수형 2
+{
+  function gugudan(dan) {
+    for (let mult = 1; mult < 10; mult++) {
+      console.log(`${dan} x ${mult} = ${dan * mult}`);
+    }
+  }
+}
+
+// 바로 출력
+for (let dan = 2; dan < 10; dan++) {
+  console.log(`${dan} 단`);
+  for (let mult = 1; mult < 10; mult++) {
+    console.log(`${dan} x ${mult} = ${dan * mult}`);
+  }
+}
+
+// 결과에 짝수가 안나오게
+for (let dan = 2; dan < 10; dan++) {
+  dan % 2 == 0 || console.log(`${dan} 단`);
+  for (let mult = 1; mult < 10; mult++) {
+    if (mult % 2 !== 0 && dan % 2 !== 0) {
+      console.log(`${dan} x ${mult} = ${dan * mult}`);
+    }
+  }
+}
+```
 
 ---
 

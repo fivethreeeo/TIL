@@ -1,6 +1,6 @@
 ##### 최초작성일 : 2021. 8. 31.<br><br>
 
-# Array - join(), slpit(), reverse(), slice(), find(), filter(), map(), some(), every(), reduce()
+# Array APIs - join(), slpit(), reverse(), slice(), find(), filter(), map(), some(), every(), reduce()
 
 []()  
 [Reference](#reference)

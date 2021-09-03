@@ -46,7 +46,7 @@
 
 > Note!
 >
-> Immutable data types: primitive types, frozen objects (i.e. object.freeze())  
+> Immutable data types: primitive types, frozen objects (i.e. object.freeze())
 > Mutable data types: all objects by default are mutable in JS
 
 <br>
@@ -62,6 +62,8 @@ const count = 20;
 const size = 5.5;
 ```
 
+<br>
+
 - special number value : **Infinity, -Infinity, NaN**
 
 ```js
@@ -74,6 +76,51 @@ const zero = 0 / 1; // print: 0
 
 <br>
 
+- 기타 표기 법
+
+```js
+// 지수 표기법 exponential notation
+console.log(5e4); // 5 * 10000 = 50000
+console.log(5e-4); // 5 * 1/10000 = 0.0005
+
+// 2진법
+// 숫자 앖에 '0b' 붙임
+console.log(0b01, 0b10, 0b11, 0b100); // 1, 2, 3, 4
+
+// 8진법
+// 숫자 앖에 '0o' 붙임
+console.log(0o7, 0o10, 0o11, 0o12); // 7, 8 ,9, 10
+
+// 16진법
+// 숫자 앞에 '0x' 붙임
+// 0 ~ 9 ~ a ~ f
+console.log(0xa, 0xf, 0x10); // 10, 15, 16
+
+// parseInt() - 정수로 변환
+parseInt('not-a-number'); // NaN
+parseInt(1.234); // 1
+
+// parseFloat() - 실수로 변환
+parseFloat('not-a-number'); // NaN
+parseFloat('1.234'); // 1.234
+
+// 다른 기수법 사용
+//parseInt(number, base)
+parseInt(100, 2); // 4
+parseInt(12, 8); // 10
+```
+
+<br>
+
+- `NaN` 와 `NaN` 비교하면 전부 false
+
+```js
+NaN == NaN; //false
+NaN < NaN; // false
+```
+
+<br>
+
 ## string 타입
 
 ```js
@@ -82,6 +129,17 @@ const mansaout = 'mansaout';
 const greeting = 'hello ' + mansaout;
 
 console.log(greeting, typeof greeting); // print: "hello manasaout" string
+```
+
+<br>
+- 문자열의 번호 확인 `charCodeAt()`
+
+```js
+console.log('a'.charCodeAt()); // print: 97
+
+console.log('ad' > 'ab'); // print: true
+// 1. 각 문자열의 첫 번째 비교 a vs a
+// 2. 각 문자열의 두 번째 비교 d vs b
 ```
 
 <br>
