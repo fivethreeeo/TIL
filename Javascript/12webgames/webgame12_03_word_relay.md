@@ -55,7 +55,7 @@ const 리스너함수 => (event) {
 
 <br>
 
-- ### Tag의 값 가져오기
+- #### Tag의 값 가져오기
 
 ```js
 // 입력태그 input, select, textarea => .value
@@ -67,7 +67,7 @@ const $div = document.querySelector('div');
 console.log($div.textContent);
 ```
 
-- ### Tag Focus
+- #### Tag Focus
   `tag.focus()`
 
 <br><br>
