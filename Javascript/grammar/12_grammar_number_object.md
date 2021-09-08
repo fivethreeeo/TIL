@@ -1,5 +1,7 @@
 ##### 최초작성일 : 2021. 8. 22.<br><br>
+
 # 12. 객체 - Number Object (Primitive 값/타입, valueOf, toString(), toLocaleString(), toExponential(), toFixed())
+
 [Primitive 값/타입](#primitive-값타입)  
 [valueOf()](#valueOf)  
 [toString()](#tostring)  
@@ -9,6 +11,7 @@
 [Reference](#reference)
 
 ## Primitive 값/타입
+
 - Primitive Value
   - 언어에 있어 가장 낮은 단계의 값
   - 더 이상 분해/전개 할 수 없는 값
@@ -19,15 +22,14 @@
 
 ```js
 var obj = {
-    one : "하나",
+  one: '하나',
 
-    /*
+  /*
         위의 경우 Local에서 보면
 
         one : "하나"
         >__proto__: Object  <<< 프리미티브 값을 제공하지 않는 형태
     */
-
 };
 ```
 
@@ -39,9 +41,9 @@ var obj = {
   - `Number`, `String`, `Boolean`, `Date`
 
 ```js
-var obj = new Number("456");
+var obj = new Number('456');
 
-    /*
+/*
         위의 경우 Local에서 보면
 
         >__proto__: Number
@@ -57,32 +59,34 @@ console.log(obj2 + 200); //obj2의 프리미티브 값으로 계산
 console.log(obj2 + true);
 
 //--[실행결과]--
-300
-101
+300;
+101;
 ```
 
 <br><br>
 
 ## valueOf()
+
 - Number 인스턴스의 Primitive Value를 반환
 - 파라미터 사용하지 않음
 
 ```js
 var obj = new Number(500);
-var obj1 = new Number("값");
+var obj1 = new Number('값');
 
 console.log(obj.valueOf());
 console.log(obj1.valueOf());
 
 //--[실행결과]--
 
-500
-NaN
+500;
+NaN;
 ```
 
 <br><br>
 
 ## toString()
+
 - data를 string 타입으로 변환
 - 파라미터 값
   - 진수 입력 (2~36)
@@ -106,6 +110,7 @@ console.log(value === valueToString);
 true
 false
 ```
+
 ```js
 console.log(100.toString()); // X
 
@@ -124,6 +129,7 @@ console.log(100.0.toString()); // O
 <br><br>
 
 ## toLocaleString()
+
 - 숫자를 브라우저가 지원하는 지역화 문자로 변환
 - 지역화를 지원하지 않으면 toString()로 반환
 - 파라미터 사용 X
@@ -135,14 +141,15 @@ console.log(value.toLocaleString('de-DE')); //독일
 console.log(value.toLocaleString('zh-Hans-CN-u-nu-hanidec')); //중국
 
 //--[실행결과]--
-1,234.56
-1.234,56
-一,二三四.五六
+1, 234.56;
+1.234, 56;
+一, 二三四.五六;
 ```
 
 <br><br>
 
 ## toExponential()
+
 - 숫자를 지수 표기로 변환하여 문자열로 반환
 - 파라미터
   - 소수 이하 자릿 수 **`0~20`** 까지 작성
@@ -158,23 +165,24 @@ console.log(value.toLocaleString('zh-Hans-CN-u-nu-hanidec')); //중국
 var value = 123456;
 
 console.log(
-    value.toExponential(),
-    value.toExponential(0),
-    value.toExponential(2),
-    value.toExponential(6),
+  value.toExponential(),
+  value.toExponential(0),
+  value.toExponential(2),
+  value.toExponential(6)
 );
 
 //--[실행결과]--
 
-1.23456e+5
-1e+5
-1.235e+5
-1.23456000e+5
+1.23456e5;
+1e5;
+1.235e5;
+1.23456e5;
 ```
 
 <br><br>
 
 ## toFixed()
+
 - 숫자를 고정 소숫점 표기로 변환하여 문자열로 반환
 - 파라미터
   - 소수 이하 자릿 수 **`0~20`** 까지 작성
@@ -188,26 +196,22 @@ console.log(
 var value = 123.456;
 
 console.log(
-    value.toExponential(),
-    value.toExponential(0),
-    value.toExponential(2),
-    value.toExponential(6),
+  value.toExponential(),
+  value.toExponential(0),
+  value.toExponential(2),
+  value.toExponential(6)
 );
 
 //--[실행결과]--
 
-123
-123
-123.46
-123.4560
+123;
+123;
+123.46;
+123.456;
 ```
 
+## <br><br>
 
-<br><br>
----
 ### **Reference**
-- [자바스크립트 비기너: 튼튼한 기본 만들기](https://www.inflearn.com/course/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%B9%84%EA%B8%B0%EB%84%88)
 
-<br><br>
----
-##### [이전 11. 객체 - Number Object (Number(), Number상수, new 연산자 - 인스턴스 생성, new Number() - 인스턴스 형태)](https://github.com/mansaout/TIL/blob/main/Javascript/11_grammar_number_object.md)
+- [자바스크립트 비기너: 튼튼한 기본 만들기](https://www.inflearn.com/course/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%B9%84%EA%B8%B0%EB%84%88)

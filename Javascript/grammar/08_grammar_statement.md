@@ -172,9 +172,3 @@ error!!
 ### **Reference**
 
 - [자바스크립트 비기너: 튼튼한 기본 만들기](https://www.inflearn.com/course/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%B9%84%EA%B8%B0%EB%84%88)
-
-## <br><br>
-
-##### [다음 09. 함수 - 구성, 규칙, 호출, return문](https://github.com/mansaout/TIL/blob/main/Javascript/09_grammar_function.md)
-
-##### [이전 07. 문장 - if, while, do-while, for, break, continue](https://github.com/mansaout/TIL/blob/main/Javascript/07_grammar_statement.md)

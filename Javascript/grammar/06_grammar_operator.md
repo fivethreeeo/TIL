@@ -1,5 +1,7 @@
 ##### 최초작성일 : 2021. 8. 13.<br><br>
+
 # 06. 연산자 - 논리 NOT/OR/AND 연산자, 조건 연산자, 연산자 우선순위
+
 [논리 NOT 연산자 (!)](#논리-not-연산자)  
 [논리 OR 연산자 (||)](#논리-or-연산자)  
 [논리 AND 연산자 (&&)](#논리-and-연산자)  
@@ -10,10 +12,11 @@
 <br><br>
 
 ## **논리 NOT 연산자**
+
 - 형태 : **`!value`**
 - 표현식의 평가 결과를 **true, false**로 반환 후,<br>
-**true 면 => false 반환<br>
-false 면 => true 반환**
+  **true 면 => false 반환<br>
+  false 면 => true 반환**
 - 원래 값은 변환되지 않으며 사용할 때만 변환
 
 ```js
@@ -39,6 +42,7 @@ boolean number
 <br><br>
 
 ## **논리 OR 연산자**
+
 - 형태 : **`||`**
 - 표현식의 평가 결과가
   - **하나라도 `true`이면 `true`**
@@ -49,14 +53,14 @@ boolean number
 
 ```js
 var value,
-zero = 0,
-one = 1;
+  zero = 0,
+  one = 1;
 
 console.log(value || zero || one);
 
 //--[실행결과]--
 
-1
+1;
 
 //  1. value 는 undefined => false
 //  2. zero 는 0 => false
@@ -65,15 +69,16 @@ console.log(value || zero || one);
 ```
 
 - **`true`** 면 비교 종료!!!
+
 ```js
 var zero = 0,
-one = 1;
+  one = 1;
 
 console.log(one || zero || value);
 
 //--[실행결과]--
 
-1
+1;
 
 //  1. one 은 1 => true
 //  2. 결과 값이 true가 나온 값인 1을 반환
@@ -84,8 +89,8 @@ console.log(one || zero || value);
 
 <br><br>
 
-
 ## **논리 AND 연산자**
+
 - 형태 : **`&&`**
 - 표현식의 평가 결과가
   - **하나라도 `false`면 `false`**
@@ -96,29 +101,31 @@ console.log(one || zero || value);
 
 ```js
 var one = 1,
-two = 2;
+  two = 2;
 
 console.log(one && two);
 console.log(two && one);
 
 //--[실행결과]--
 
-2
-1
+2;
+1;
 
 //  one, two 둘 다 true
 //  그래서 각각 평가 종료 시점의 one, two의 값을 반환
 ```
+
 - **`false`** 면 비교 종료!!!
+
 ```js
 var zero = 0,
-two = 2;
+  two = 2;
 
 console.log(two && zero && value);
 
 //--[실행결과]--
 
-0
+0;
 
 //  1. two 은 2 => true
 //  2. zero 는 0 => false
@@ -131,32 +138,30 @@ console.log(two && zero && value);
 <br><br>
 
 ## **조건 연산자 (3항 연산자)**
+
 - **`exp ? exp1 : exp2`**
 - exp 의 표현식을 먼저 평가
   - `true`일 경우 => `exp1`의 결과 반환
   - `false`일 경우 => `exp2`의 결과 반환
 
 ```js
-console.log(1 === 1 ? "같음" : "다름"); //true
-console.log(1 === "1" ? "같음" : "다름"); //false
+console.log(1 === 1 ? '같음' : '다름'); //true
+console.log(1 === '1' ? '같음' : '다름'); //false
 
 //--[실행결과]--
-같음
-다름
+같음;
+다름;
 ```
 
 <br><br>
 
 ## 연산자 우선순위
+
 - [MDN 연산자 우선순위](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
 
-<br><br>
----
+## <br><br>
+
 ### **Reference**
+
 - [자바스크립트 비기너: 튼튼한 기본 만들기](https://www.inflearn.com/course/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%B9%84%EA%B8%B0%EB%84%88)
 - [MDN 연산자 우선순위](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
-
-<br><br>
----
-##### [다음 07. 문장(Statement) - if, while, do-while, for, break, continue](https://github.com/mansaout/TIL/blob/main/Javascript/07_grammar_statement.md)
-##### [이전 05. 연산자 - 동등, 일치, 부등, 불일치 연산자](https://github.com/mansaout/TIL/blob/main/Javascript/05_grammar_operator.md)

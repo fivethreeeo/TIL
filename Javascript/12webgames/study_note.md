@@ -1,9 +1,8 @@
 ##### 최초작성일 : 2021. 9. 6.<br><br>
 
-# 3. DOM 객체 다루기 - 끝말잇기 게임
+# Study Note
 
 [Project Link](#project-link)  
-[Go to Game](#go-to-game)  
 [Note](#note)  
 [Reference](#reference)
 
@@ -11,8 +10,8 @@
 
 ### Project Link
 
-- [Github](https://github.com/mansaout/word-relay)
-- [Go To Game](https://mansaout.github.io/word-relay/)
+1. 끝말잇기 [[Github]](https://github.com/mansaout/word-relay), [[Go To Game]](https://mansaout.github.io/word-relay/)
+2. 계산기 [[Github]](https://github.com/mansaout/calculator), [[Go To Game]](https://mansaout.github.io/calculator/)
 
 <br>
 
@@ -69,6 +68,19 @@ console.log($div.textContent);
 
 - #### Tag Focus
   `tag.focus()`
+
+<br>
+
+- #### if 중첩 제거하기
+  1. 공통된 절차를 각 분기점 내부에 넣는다.
+  2. 분기점에서 짧은 절차부터 실행하게 `if문`을 작성한다.
+  3. 짧은 절차가 끝나면 return(함수 내부의 경우)이나 break(for문 내부의 경우)로 중단한다.
+  4. else를 제거한다. (중첩 제거)
+  5. 반복.
+
+```js
+
+```
 
 <br><br>
 
