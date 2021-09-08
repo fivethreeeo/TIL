@@ -10,8 +10,9 @@
 
 ### Project Link
 
-1. 끝말잇기 [[Github]](https://github.com/mansaout/word-relay), [[Go To Game]](https://mansaout.github.io/word-relay/)
-2. 계산기 [[Github]](https://github.com/mansaout/calculator), [[Go To Game]](https://mansaout.github.io/calculator/)
+1. 끝말잇기 [Github](https://github.com/mansaout/word-relay), [Go To Game](https://mansaout.github.io/word-relay/)
+2. 계산기 [Github](https://github.com/mansaout/calculator), [Go To Game](https://mansaout.github.io/calculator/)
+3. 숫자야구 게임 [Github](https://github.com/mansaout/number-baseball), [Go To Game](https://mansaout.github.io/number-baseball/)
 
 <br>
 
@@ -78,8 +79,56 @@ console.log($div.textContent);
   4. else를 제거한다. (중첩 제거)
   5. 반복.
 
-```js
+<br>
 
+- #### 무작위로 숫자 뽑기
+
+```js
+Math.random(); // 0 <= n < 1
+Math.random() * 9; // 0 <= n < 9
+Math.random() * 9 + 1; // 1 <= n < 10
+
+Math.floor(num); // 내림
+Math.ceil(num); // 올림
+Math.round(num); // 반올림
+```
+
+<br>
+
+- #### indexOf, includes => 배열 속의 원하는 값 찾기
+
+```js
+// indexOf
+// => 원하는 값이 들어 있다면 해당 값의 인덱스 반환
+// => 일치하는 값이 없다면 -1 반환
+console.log('2345'.indexOf(4)); // 2
+console.log('2345'.indexOf(8)); // -1
+['2', '3', '4'].indexOf(3); // -1 , 자료형까지 같아야 함
+
+// includes
+// => true, false 반환
+console.log('2345'.includes(2)); // true
+console.log('2345'.includes(6)); // false
+```
+
+<br>
+
+- #### `document.createElement`, `document.createTextNode`
+
+  - 각각 Tag, Text를 만드는 메서드.
+  - 다른 태그에 `append` 나 `appendChild` 하기 전까지 화면에 보이지 않음
+
+- #### `append` 와 `appendChild`
+  - `document.createElement`, `document.createTextNode` 로 만든 태그나 텍스트를, 선택한 태그의 자식 태그로 넣는다.
+  - `appendChild`는 하나만, `append`는 다중
+
+```js
+let newDiv = document.createElement('div');
+let newBr = document.createElement('br');
+let newContent = document.createTextNode('환영합니다!');
+
+document.querySelector('h3').append(newDiv, newBr);
+newDiv.appendChild(newContent);
 ```
 
 <br><br>
@@ -91,5 +140,3 @@ console.log($div.textContent);
 - [Let’s Get IT 자바스크립트 프로그래밍, 조현영](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791165215873&orderClick=LAG&Kc=)
 
 <br><br>
-
-##### [Next - ]()
