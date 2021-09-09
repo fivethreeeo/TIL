@@ -109,5 +109,3 @@ console.log(text, typeof text); // print: 100 number
 <br><br>
 
 ##### [Next - Variable Types - primitive types, object type](/Javascript/basic/03_variable_type.md)
-
-##### [Prev - async vs defer]()
