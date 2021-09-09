@@ -226,6 +226,6 @@ console.log(triangle instanceof Object); // print: true
 
 <br><br>
 
-##### [Next - Object - literals and properties, computed properties, property value shorthand, constructor function](/Javascript/basic_09_object_1.md)
+##### [Next - Object - literals and properties, computed properties, property value shorthand, constructor function](/Javascript/basic/09_object_1.md)
 
-##### [Prev - Function expression, CallBack, Arrow, IIFE](/Javascript/basic_07_first_class_function.md)
+##### [Prev - Function expression, CallBack, Arrow, IIFE](/Javascript/basic/07_first_class_function.md)

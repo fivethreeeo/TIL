@@ -123,6 +123,6 @@ console.log(obj2.birthDate.getDate()); // print: 31
 
 <br><br>
 
-##### [Next - Callback](/Javascript/basic_14_callback.md)
+##### [Next - Callback](/Javascript/basic/14_callback.md)
 
-##### [Prev - Array APIs - join(), split(), reverse(), slice(), find(), filter(), map(), some(), every(), reduce()](/Javascript/basic_12_array_api.md)
+##### [Prev - Array APIs - join(), split(), reverse(), slice(), find(), filter(), map(), some(), every(), reduce()](/Javascript/basic/12_array_api.md)

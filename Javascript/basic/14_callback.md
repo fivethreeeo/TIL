@@ -143,10 +143,6 @@ userStorage.loginUser(
 
 <br><br>
 
-##### [Next - Promise, Callback to Promise](/Javascript/basic_15_promise.md)
+##### [Next - Promise, Callback to Promise](/Javascript/basic/15_promise.md)
 
-##### [Prev - JSON - Object to JSON, JSON to Object](/Javascript/basic_13_json.md)
-
-```
-
-```
+##### [Prev - JSON - Object to JSON, JSON to Object](/Javascript/basic/13_json.md)

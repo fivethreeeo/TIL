@@ -146,6 +146,6 @@ printAll('one', 'two', 'three');
 
 <br><br>
 
-##### [Next - Function expression, CallBack, Arrow, IIFE](/Javascript/basic_07_first_class_function.md)
+##### [Next - Function expression, CallBack, Arrow, IIFE](/Javascript/basic/07_first_class_function.md)
 
-##### [Prev - Switch, Loops](/Javascript/basic_05_switch_loops.md)
+##### [Prev - Switch, Loops](/Javascript/basic/05_switch_loops.md)

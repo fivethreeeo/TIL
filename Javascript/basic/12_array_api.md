@@ -347,6 +347,6 @@ const students = [
 
 <br><br>
 
-##### [Next - JSON - Object to JSON, JSON to Object](/Javascript/basic_13_json.md)
+##### [Next - JSON - Object to JSON, JSON to Object](/Javascript/basic/13_json.md)
 
-##### [Prev - Array - Declaration, index, loop, addition, deletion, searching](/Javascript/basic_11_array.md)
+##### [Prev - Array - Declaration, index, loop, addition, deletion, searching](/Javascript/basic/11_array.md)

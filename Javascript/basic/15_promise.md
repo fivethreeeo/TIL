@@ -192,6 +192,6 @@ userStorage
 
 <br><br>
 
-##### [Next - async & await, all(), race()](/Javascript/basic_16_async_await.md)
+##### [Next - async & await, all(), race()](/Javascript/basic/16_async_await.md)
 
-##### [Prev - Callback](/Javascript/basic_14_callback.md)
+##### [Prev - Callback](/Javascript/basic/14_callback.md)

@@ -164,6 +164,6 @@ const person5 = new Person('name5', 5);
 
 <br><br>
 
-##### [Next - Object - in operator, for..in vs for..of, cloning](/Javascript/basic_10_object_2.md)
+##### [Next - Object - in operator, for..in vs for..of, cloning](/Javascript/basic/10_object_2.md)
 
-##### [Prev - Class declaration, getter & setter, fields, static, inheritance, instanceOf](/Javascript/basic_08_class.md)
+##### [Prev - Class declaration, getter & setter, fields, static, inheritance, instanceOf](/Javascript/basic/08_class.md)

@@ -199,6 +199,6 @@ calculate(remainder, 1, 2); // print: 1
 
 <br><br>
 
-##### [Next - Class declaration, getter & setter, fields, static, inheritance, instanceOf](/Javascript/basic_08_class.md)
+##### [Next - Class declaration, getter & setter, fields, static, inheritance, instanceOf](/Javascript/basic/08_class.md)
 
-##### [Prev - Function declaration, Parameters](/Javascript/basic_06_function.md)
+##### [Prev - Function declaration, Parameters](/Javascript/basic/06_function.md)

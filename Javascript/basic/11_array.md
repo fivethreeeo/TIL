@@ -174,6 +174,6 @@ console.log(balls.includes('🎾'));
 
 <br><br>
 
-##### [Next - Array APIs - join(), split(), reverse(), slice(), find(), filter(), map(), some(), every(), reduce()](/Javascript/basic_12_array_api.md)
+##### [Next - Array APIs - join(), split(), reverse(), slice(), find(), filter(), map(), some(), every(), reduce()](/Javascript/basic/12_array_api.md)
 
-##### [Prev - Object - in operator, for..in, for..of, cloning](/Javascript/basic_10_object_2.md)
+##### [Prev - Object - in operator, for..in, for..of, cloning](/Javascript/basic/10_object_2.md)

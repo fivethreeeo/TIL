@@ -248,6 +248,6 @@ for (let dan = 2; dan < 10; dan++) {
 
 <br><br>
 
-##### [Next - Function declaration, Parameters](/Javascript/basic_06_function.md)
+##### [Next - Function declaration, Parameters](/Javascript/basic/06_function.md)
 
-##### [Prev - Operator](/Javascript/basic_04_operator.md)
+##### [Prev - Operator](/Javascript/basic/04_operator.md)

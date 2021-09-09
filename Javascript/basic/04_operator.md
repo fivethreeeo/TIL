@@ -276,6 +276,6 @@ const name3 = 0;
 
 <br><br>
 
-##### [Next - Switch, Loops](/Javascript/basic_05_switch_loops.md)
+##### [Next - Switch, Loops](/Javascript/basic/05_switch_loops.md)
 
-##### [Prev - Variable Types - primitive types, object type](/Javascript/basic_03_variable_type.md)
+##### [Prev - Variable Types - primitive types, object type](/Javascript/basic/03_variable_type.md)

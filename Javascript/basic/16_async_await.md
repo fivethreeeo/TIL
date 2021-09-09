@@ -175,6 +175,6 @@ pickOne().then(console.log); // print: 🍌 //1000ms
 
 <br><br>
 
-##### [Next - Destructuring Assignment, Spread Syntax, Optional Chaining](/Javascript/basic_17_es6_es11.md)
+##### [Next - Destructuring Assignment, Spread Syntax, Optional Chaining](/Javascript/basic/17_es6_es11.md)
 
-##### [Prev - Promise, Callback to Promise](/Javascript/basic_15_promise.md)
+##### [Prev - Promise, Callback to Promise](/Javascript/basic/15_promise.md)

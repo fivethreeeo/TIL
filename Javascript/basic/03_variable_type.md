@@ -211,6 +211,6 @@ console.log(symbol1.description); // print: id
 
 <br><br>
 
-##### [Next - Operator](/Javascript/basic_04_operator.md)
+##### [Next - Operator](/Javascript/basic/04_operator.md)
 
-##### [Prev - Variable, Constant, Variable Types, Dynamic typing](/Javascript/basic_02_variable.md)
+##### [Prev - Variable, Constant, Variable Types, Dynamic typing](/Javascript/basic/02_variable.md)
