@@ -45,7 +45,7 @@
   - [Object - literals and properties, computed properties, property value shorthand, constructor function](/Javascript/basic/09_object_1.md)
   - [Object - in operator, for..in, for..of, cloning](/Javascript/basic/10_object_2.md)
   - [Array - Declaration, index, loop, addition, deletion, searching](/Javascript/basic/11_array.md)
-  - [Array APIs - Declaration, index, loop, addition, deletion, searching](/Javascript/basic/12_array_api.md)
+  - [Array APIs - join(), split(), reverse(), slice(), find(), filter(), map(), some(), every(), reduce()](/Javascript/basic/12_array_api.md)
   - [Json - Object to JSON, JSON to Object](/Javascript/basic/13_json.md)
   - [Callback](/Javascript/basic/14_callback.md)
   - [Promise, Callback to Promise](/Javascript/basic/15_promise.md)
