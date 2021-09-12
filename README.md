@@ -23,7 +23,7 @@
   - [03. DOM 객체 다루기 - 끝말잇기 게임](https://github.com/mansaout/word-relay)
   - [04. 함수 사용하기 - 계산기](https://github.com/mansaout/calculator)
   - [05. 반복문 사용하기 - 숫자야구 게임](https://github.com/mansaout/number-baseball)
-  - [06. 타이머 사용하기 - 로또 추첨기]
+  - [06. 타이머 사용하기 - 로또 추첨기](https://github.com/mansaout/lotto)
   - [07. 객체 다루기 - 가위바위보 게임]
   - [08. Date 사용하기 - 반응속도 테스트]
   - [09. 이차원 배열 다루기 - 틱택토 게임]

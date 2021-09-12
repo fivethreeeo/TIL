@@ -13,6 +13,7 @@
 1. 끝말잇기 [Github](https://github.com/mansaout/word-relay), [Go To Game](https://mansaout.github.io/word-relay/)
 2. 계산기 [Github](https://github.com/mansaout/calculator), [Go To Game](https://mansaout.github.io/calculator/)
 3. 숫자야구 게임 [Github](https://github.com/mansaout/number-baseball), [Go To Game](https://mansaout.github.io/number-baseball/)
+4. 로또추첨기 [Github](https://github.com/mansaout/lotto), [Go To Game](https://mansaout.github.io/lotto/)
 
 <br>
 
@@ -130,6 +131,30 @@ let newContent = document.createTextNode('환영합니다!');
 document.querySelector('h3').append(newDiv, newBr);
 newDiv.appendChild(newContent);
 ```
+
+<br>
+
+- #### `var` 스코프 vs `let` 스코프
+  - `var`는 함수 스코프
+  - `let`은 블록 스코프
+
+```js
+// var는 함수 스코프
+// 함수만 신경씀
+// for, if 문 등의 안에 있어도 밖에서 접근 가능
+for (var i = 0; i < 5; i++) {}
+console.log(i); // 5
+
+//let은 블록 스코프
+for (let k = 0; k < 5; k++) {}
+console.log(k); // Error: k is not defined
+```
+
+<br>
+
+- #### Fisher-Yates-Shuffle Algorithm (피셔-예이츠 셔플 알고리즘)
+  > 숫자를 무작위로 섞는 방법.  
+  > 먼저, 무작위 인덱스를 하나 뽑은 후, 그에 해당되는 요소를 새로운 배열로 옮깁니다. 이를 반복하다 보면 새 배열에 무작위로 섞인 숫자들이 들어갑니다.
 
 <br><br>
 
