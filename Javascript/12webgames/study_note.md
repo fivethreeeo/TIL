@@ -14,6 +14,7 @@
 2. 계산기 [Github](https://github.com/mansaout/calculator), [Go To Game](https://mansaout.github.io/calculator/)
 3. 숫자야구 게임 [Github](https://github.com/mansaout/number-baseball), [Go To Game](https://mansaout.github.io/number-baseball/)
 4. 로또추첨기 [Github](https://github.com/mansaout/lotto), [Go To Game](https://mansaout.github.io/lotto/)
+5. 가위바위보 [Github](https://github.com/mansaout/scissors-rock-spaper), [Go To Game](https://mansaout.github.io/scissors-rock-spaper/)
 
 <br>
 
