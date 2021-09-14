@@ -26,7 +26,7 @@
   - [06. 타이머 사용하기 - 로또 추첨기](https://github.com/mansaout/lotto)
   - [07. 객체 다루기 - 가위바위보 게임](https://github.com/mansaout/scissors-rock-spaper)
   - [08. Date 사용하기 - 반응속도 테스트](https://github.com/mansaout/response-check)
-  - [09. 이차원 배열 다루기 - 틱택토 게임]
+  - [09. 이차원 배열 다루기 - 틱택토 게임](https://github.com/mansaout/tictactoe)
   - [10. 클래스 다루기 - 텍스트 RPG]
   - [11. 이벤트 루프 이해하기 - 카드 짝 맞추기 게임]
   - [12. 재귀 함수 사용하기 - 지뢰 찾기 게임]

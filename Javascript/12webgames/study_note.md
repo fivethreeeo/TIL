@@ -16,6 +16,7 @@
 4. 로또추첨기 [Github](https://github.com/mansaout/lotto), [Go To Game](https://mansaout.github.io/lotto/)
 5. 가위바위보 [Github](https://github.com/mansaout/scissors-rock-spaper), [Go To Game](https://mansaout.github.io/scissors-rock-spaper/)
 6. 반응속도 테스트 [Github](https://github.com/mansaout/response-check), [Go To Game](https://mansaout.github.io/response-check/)
+7. 틱택토 게임 [Github](https://github.com/mansaout/tictactoe), [Go To Game](https://mansaout.github.io/tictactoe/)
 
 <br>
 
