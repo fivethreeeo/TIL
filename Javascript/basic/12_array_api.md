@@ -79,7 +79,7 @@ const array = [1, 2, 3, 4, 5];
 ```
 
 ```js
-// A4. splice()
+// A4-1. splice()
 
 const newArray = array.splice(2, 2);
 
@@ -104,7 +104,7 @@ console.log(array); // [1, 2]
     ```
 
 ```js
-// Q4-2. slice()
+// A4-2. slice()
 
 const newArray = array.slice(2, 5);
 
