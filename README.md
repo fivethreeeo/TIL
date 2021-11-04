@@ -19,6 +19,10 @@
 
 - [Study Note](https://github.com/mansaout/codesquard-cocoa-js)
 
+### **Git**
+
+- [Git Cheat Sheet](https://github.com/mansaout/TIL/blob/main/Git/git_cheat_sheet.md)
+
 ### **Javascript**
 
 - #### [book]Let's Get IT 자바스크립트 프로그래밍
@@ -36,10 +40,6 @@
   - [05. 반복문 사용하기 - 숫자야구 게임](https://github.com/mansaout/number-baseball)
   - [04. 함수 사용하기 - 계산기](https://github.com/mansaout/calculator)
   - [03. DOM 객체 다루기 - 끝말잇기 게임](https://github.com/mansaout/word-relay)
-
-- #### Javascript Master
-
-  - Web APIs
 
 - #### Javascript Basic (ES5+)
 
@@ -74,7 +74,3 @@
   - [10. 객체 - Property 개요, 추가, 변경, 값추출, for~in문, 빌트인(Built-in) ](/Javascript/grammar/10_grammar_object.md)
   - [11. 객체 - Number Object (Number(), Number상수, new 연산자, new Number()](/Javascript/grammar/11_grammar_number_object.md)
   - [12. 객체 - Number Object (Primitive, valueOf, toString(), toLocaleString(), toExponential(), toFixed())](/Javascript/grammar/12_grammar_number_object.md)
-
-### **Git**
-
-- [Git Cheat Sheet](https://github.com/mansaout/TIL/blob/main/Git/git_cheat_sheet.md)
