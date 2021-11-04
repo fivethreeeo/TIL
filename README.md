@@ -15,7 +15,9 @@
 
 ## **Study Log**
 
-- #### [Note : Code Squard Cocoa JS](https://github.com/mansaout/codesquard-cocoa-js)
+### Code Squard Cocoa JS
+
+- [Study Note](https://github.com/mansaout/codesquard-cocoa-js)
 
 ### **Javascript**
 
