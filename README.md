@@ -15,6 +15,8 @@
 
 ## **Study Log**
 
+- #### [Note : Code Squard Cocoa JS](https://github.com/mansaout/codesquard-cocoa-js)
+
 ### **Javascript**
 
 - #### [book]Let's Get IT 자바스크립트 프로그래밍
@@ -32,6 +34,10 @@
   - [05. 반복문 사용하기 - 숫자야구 게임](https://github.com/mansaout/number-baseball)
   - [04. 함수 사용하기 - 계산기](https://github.com/mansaout/calculator)
   - [03. DOM 객체 다루기 - 끝말잇기 게임](https://github.com/mansaout/word-relay)
+
+- #### Javascript Master
+
+  - Web APIs
 
 - #### Javascript Basic (ES5+)
 
