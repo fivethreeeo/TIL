@@ -25,14 +25,15 @@
 [- parentNode, children](#parentnode-children)  
 [- 유사 배열 객체, Array.from](#유사-배열-객체-arrayfrom)  
 [- rowIndex, celIndex](#rowindex-cellindex)  
-[- flat()](#flat)  
-[- window]()  
-[- this]()  
-[- 참조, 깊은 복사, 얕은 복사]()  
-[- 클래스]()  
-[- 클래스 상속]()  
-[- ]()  
+[- flat()](#flat)
 [Reference](#reference)
+
+<!-- [- window]()
+[- this]()
+[- 참조, 깊은 복사, 얕은 복사]()
+[- 클래스]()
+[- 클래스 상속]()
+[- ]()   -->
 
 <br><br>
 

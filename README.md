@@ -15,7 +15,7 @@
 
 ## **Study Log**
 
-### Code Squard Cocoa JS
+### Code Squard Cocoa JS, 2021. 11 ~
 
 - [Study Note](https://github.com/mansaout/codesquard-cocoa-js)
 
@@ -25,7 +25,7 @@
 
 ### **Javascript**
 
-- #### [book]Let's Get IT 자바스크립트 프로그래밍
+- #### [book]Let's Get IT 자바스크립트 프로그래밍, 2021. 9 ~ 10
 
   - [Study Note](/Javascript/12webgames/study_note.md)
   - [14. 복습 - 두더지 잡기 게임]
@@ -41,7 +41,7 @@
   - [04. 함수 사용하기 - 계산기](https://github.com/mansaout/calculator)
   - [03. DOM 객체 다루기 - 끝말잇기 게임](https://github.com/mansaout/word-relay)
 
-- #### Javascript Basic (ES5+)
+- #### Javascript Basic (ES5+), 2021. 8 ~ 9
 
   - [Variable, Constant, Variable Types, Dynamic typing](/Javascript/basic/02_variable.md)
   - [Variable Types - primitive types, object type](Javascript/basic/03_variable_type.md)
@@ -60,7 +60,7 @@
   - [async & await, all(), race()](/Javascript/basic/16_async_await.md)
   - [Destructuring Assignment, Spread Syntax, Optional Chaining](Javascript/basic/17_es6_es11.md)
 
-- #### [paused]Javascript Grammar
+<!-- - #### [paused]Javascript Grammar
 
   - [01. 기본 문법 - 문장, 변수, 정수, 실수, 상수, 진수](/Javascript/grammar/01_grammar_lexical_grammar.md)
   - [02. 데이터 타입 - Number, String, Undefined, Null, Boolean, Object](/Javascript/grammar/02_grammar_data_type.md)
@@ -73,4 +73,4 @@
   - [09. 함수 - 구성, 규칙, 호출, return](/Javascript/grammar/09_grammar_function.md)
   - [10. 객체 - Property 개요, 추가, 변경, 값추출, for~in문, 빌트인(Built-in) ](/Javascript/grammar/10_grammar_object.md)
   - [11. 객체 - Number Object (Number(), Number상수, new 연산자, new Number()](/Javascript/grammar/11_grammar_number_object.md)
-  - [12. 객체 - Number Object (Primitive, valueOf, toString(), toLocaleString(), toExponential(), toFixed())](/Javascript/grammar/12_grammar_number_object.md)
+  - [12. 객체 - Number Object (Primitive, valueOf, toString(), toLocaleString(), toExponential(), toFixed())](/Javascript/grammar/12_grammar_number_object.md) -->
