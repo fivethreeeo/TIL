@@ -2,13 +2,17 @@
 
 개발자가 되기 위해 진행한 학습 노트, 프로젝트, 고민과 경험 등을 기록하는 공간입니다.
 
-## **작성규칙**
+<br>
+
+### **작성규칙**
 
 - 쉽게 찾고 쉽게 읽을 수 있게 내용을 명확하게 작성한다.
 - 문서를 다시 봤을 때, 추가적인 검색을 하지 않게 자세히 기록한다.
 - 레퍼런스를 명시한다.
 
 <br>
+
+##
 
 ### Algorithm
 
@@ -30,7 +34,9 @@
 
 ### Javascript
 
-- [Book] **Let's Get IT 자바스크립트 프로그래밍, 2021. 9 ~ 10**
+- **[Book] 코어 자바스크립트**
+
+- **[Book] Let's Get IT 자바스크립트 프로그래밍, 2021. 9 ~ 10**
 
   - [Study Note](Javascript/12webgames/study_note.md)
   - [11. 이벤트 루프 이해하기 - 카드 짝 맞추기 게임](https://github.com/mansaout/card-matching)
@@ -43,7 +49,7 @@
   - [04. 함수 사용하기 - 계산기](https://github.com/mansaout/calculator)
   - [03. DOM 객체 다루기 - 끝말잇기 게임](https://github.com/mansaout/word-relay)
 
-- [Lecture] **Javascript Basic (ES5+), 2021. 8 ~ 9**
+- **[Lecture] Javascript Basic (ES5+), 2021. 8 ~ 9**
 
   - [Variable, Constant, Variable Types, Dynamic typing](Javascript/basic/02_variable.md)
   - [Variable Types - primitive types, object type](Javascript/basic/03_variable_type.md)
