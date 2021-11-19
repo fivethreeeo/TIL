@@ -1,6 +1,6 @@
-# **Today I Learned**
+# **Today I Learned 📈**
 
-개발자가 되기 위해 진행한 학습 노트, 프로젝트, 고민과 경험 등을 기록하는 공간입니다.
+학습 노트, 프로젝트, 회고 등을 기록하는 공간입니다.
 
 #### **작성규칙**
 
@@ -10,15 +10,15 @@
 
 ##
 
-### Algorithm
+### Courses
 
-- [Learning Repository](https://github.com/mansaout/TIL/tree/main/Algorithm)
+- [Code Squard Cocoa JS, 2021. 11 ~ 12](https://github.com/mansaout/codesquard-cocoa-js)
 
 <br>
 
-### Code Squard Cocoa JS, 2021. 11 ~ 12
+### Algorithm
 
-- [Learning Repository](https://github.com/mansaout/codesquard-cocoa-js)
+- [Learning Repository](https://github.com/mansaout/TIL/tree/main/Algorithm)
 
 <br>
 
