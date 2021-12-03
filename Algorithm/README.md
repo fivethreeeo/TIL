@@ -4,6 +4,7 @@
 
 - [`2021-11-26 / programmers-lessons:12910`](note/p12910.js)
 - [`2021-11-28 / programmers-lessons:77484`](note/p77484.js)
+- [`2021-12-04 / programmers-lessons:68644`](note/p68644.js)
 
 <br>
 
