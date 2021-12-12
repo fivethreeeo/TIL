@@ -12,7 +12,7 @@
 
 ### Algorithm
 
-- [Learning Repository](https://github.com/mansaout/TIL/tree/main/Algorithm)
+- [Learning Repository](Algorithm/README.md)
 
 <br>
 
@@ -30,8 +30,6 @@
 <br>
 
 ### Javascript
-
-- **[Book] 코어 자바스크립트**
 
 - **[Book] Let's Get IT 자바스크립트 프로그래밍, 2021. 9 ~ 10**
 
