@@ -10,16 +10,21 @@
 
 ##
 
+### Courses
+
+- [Code Squard Cocoa JS, 2021. 11 ~ 12](https://github.com/mansaout/codesquard-cocoa-js)
+
+<br>
+
 ### Algorithm
 
 - [Learning Repository](Algorithm/README.md)
 
 <br>
 
-### Courses
+### Computer Science
 
-- [Code Squard Cocoa JS, 2021. 11 ~ 12](https://github.com/mansaout/codesquard-cocoa-js)
-- [코코아JS 과정 회고]()
+- [모두를 위한 컴퓨터 과학 (CS50 2019), 2021. 12](CS50_2019/README.md)
 
 <br>
 
