@@ -24,7 +24,14 @@
 
 ### Computer Science
 
-- [모두를 위한 컴퓨터 과학 (CS50 2019), 2021. 12](CS50_2019/README.md)
+- **[Lecture] 모두를 위한 컴퓨터 과학 (CS50 2019), David J. Malan, 2021. 12**
+
+  - [1. 컴퓨팅 사고](CS50_2019/computational_thinking.md)
+  - [2. C 언어](CS50_2019/c_language.md)
+  - [3. 배열]
+  - [4. 알고리즘]
+  - [5. 메모리]
+  - [6. 자료구조]
 
 <br>
 
@@ -36,7 +43,7 @@
 
 ### Javascript
 
-- **[Book] Let's Get IT 자바스크립트 프로그래밍, 2021. 9 ~ 10**
+- **[Book] Let's Get IT 자바스크립트 프로그래밍, 조현영, 2021. 9 ~ 10**
 
   - [Study Note](Javascript/12webgames/study_note.md)
   - [11. 이벤트 루프 이해하기 - 카드 짝 맞추기 게임](https://github.com/mansaout/card-matching)
@@ -49,7 +56,7 @@
   - [04. 함수 사용하기 - 계산기](https://github.com/mansaout/calculator)
   - [03. DOM 객체 다루기 - 끝말잇기 게임](https://github.com/mansaout/word-relay)
 
-- **[Lecture] Javascript Basic (ES5+), 2021. 8 ~ 9**
+- **[Lecture] Javascript Basic (ES5+), 드림코딩 by 엘리, 2021. 8 ~ 9**
 
   - [Variable, Constant, Variable Types, Dynamic typing](Javascript/basic/02_variable.md)
   - [Variable Types - primitive types, object type](Javascript/basic/03_variable_type.md)
