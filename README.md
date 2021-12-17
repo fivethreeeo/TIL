@@ -40,8 +40,8 @@
 
 - **Cocoa JS 과정 다시 풀어보기, 2021. 12**
 
-  - [Study Note](Javascript/review_cocoa/study_note.md)
   - [진수변환](Javascript/review_cocoa/notation.js)
+  - [도형넓이계산](Javascript/review_cocoa/figureArea.js)
 
 - **[Book] Let's Get IT 자바스크립트 프로그래밍, 조현영, 2021. 9 ~ 10**
 
