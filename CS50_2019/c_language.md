@@ -8,7 +8,7 @@
 [6. 하드위어의 한계](#6-하드웨어의-한계)  
 [Reference](#reference)
 
-##### 작성된 예제 코드는 [CS50 Sandbox](https://sandbox.cs50.io/)를 사용합니다.
+##### 작성된 예제 코드는 [CS50 Sandbox](https://ide.cs50.io/)를 사용합니다.
 
 <br><br>
 

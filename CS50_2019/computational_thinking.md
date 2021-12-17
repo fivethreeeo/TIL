@@ -5,7 +5,7 @@
 [알고리즘](#알고리즘)  
 [Reference](#reference)
 
-##### 작성된 예제 코드는 [CS50 Sandbox](https://sandbox.cs50.io/)를 사용합니다.
+##### 작성된 예제 코드는 [CS50 Sandbox](https://ide.cs50.io/)를 사용합니다.
 
 <br><br>
 
