@@ -30,9 +30,9 @@
   - [1. 컴퓨팅 사고](CS50_2019/computational_thinking.md)
   - [2. C 언어](CS50_2019/c_language.md)
   - [3. 배열](CS50_2019/array.md)
-  - [4. 알고리즘]
-  - [5. 메모리]
-  - [6. 자료구조]
+  - [4. 알고리즘](CS50_2019/algorithms.md)
+  - [5. 메모리](CS50_2019/memory.md)
+  - [6. 자료구조](CS50_2019/data_structures.md)
 
 <br>
 
