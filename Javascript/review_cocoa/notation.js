@@ -6,7 +6,7 @@
     2) 게임에서 말해야 할 총 숫자를 배열로 구함. totalNumbers
     3) totalNumbers의 숫자들을 n진수로 변환. convertedNumbers
     4) convertedNumbers를 한 글자씩 분리. allAnswers
-    4) allAnswers에서 filter로 내 순서만 찾아 배열로 구함. myAnswer
+    5) allAnswers에서 filter로 내 순서만 찾아 배열로 구함. myAnswer
 
   [예외처리]
     1) 변경할 진수가 2~16이 아닐 경우
@@ -18,13 +18,17 @@
       - 기존 for문을 사용한 로직을 스프레드 연산자로 대체.
       - 가독성을 더 좋게 바꿈
 
-    4)
+    2)
       - parseInt(30, 8) // 8진수의 30을 10진수 숫자로 변환
       - (30).toString(2) // 10진수 숫자 30을 2진수 숫자로 변환
       - Array.prototype.keys()
         - 배열의 각 인덱스를 키 값으로 가지는 새로운 Array Iterator를 반환
         - 빈 인덱스를 무시하지 않음.
         - Iterator기 때문에 스프레드 연산자 사용 가능
+        - Array.from()
+      - Array.keys()
+      - Object.keys()
+      - const arr = Array.from({ length: totalCount }, (v, i) => i);
 */
 
 const playNotationGame = (notation, numberCount, playerCount, myTurn) => {
@@ -63,17 +67,3 @@ const isVaildArgs = (notation, playerCount, myTurn) => {
 };
 
 playNotationGame(2, 3, 3, 2);
-
-/*
-  =============== note ===============
-
-  - parseInt(30, 8); 8진수의 30을 10진수 변환
-  - toString(n) n진수로 변환
-
-  - Array.from()
-  - Array.keys()
-  - Object.keys()
-
-  const arr = Array.from({ length: totalCount }, (v, i) => i);
-
-*/
