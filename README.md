@@ -45,8 +45,8 @@
 
 - **Cocoa JS 과정 다시 풀어보기, 2021. 12**
 
-  - [도형넓이계산](Javascript/review_cocoa/figureArea.js)
-  - [진수변환](Javascript/review_cocoa/notation.js)
+  - [도형 넓이 구하기](Javascript/review_cocoa/figureArea.js)
+  - [진수 변환하기](Javascript/review_cocoa/notation.js)
   - [Reduce 만들기](Javascript/review_cocoa/myReduce.js)
   - [배열 다루기](Javascript/review_cocoa/playArray.js)
   - [HashMap 구현]
