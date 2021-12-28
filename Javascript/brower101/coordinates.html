@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coordinates</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .line,
+      .tag {
+        position: absolute;
+        background-color: black;
+        color: white;
+      }
+      .horizontal {
+        width: 100%;
+        height: 1px;
+      }
+      .vertical {
+        height: 100%;
+        width: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="line horizontal"></div>
+    <div class="line vertical"></div>
+    <span class="tag"></span>
+    <script>
+      const vertical = document.querySelector('.vertical');
+      const horizontal = document.querySelector('.horizontal');
+      const tag = document.querySelector('.tag');
+
+      // 이미지 등이 전부 로드가 되고난 이후 작동하게
+      addEventListener('load', () => {
+        document.addEventListener('mousemove', (event) => {
+          const x = event.clientX;
+          const y = event.clientY;
+          tag.textContent = `${x}px. ${y}px`;
+
+          // layout 변경 없는 translate 사용
+          vertical.style.transform = `translateX(${x}px)`;
+          horizontal.style.transform = `translateY(${y}px)`;
+          tag.style.transform = `translate(${x + 16}px, ${y + 16}px)`;
+        });
+      });
+    </script>
+  </body>
+</html>

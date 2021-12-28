@@ -43,6 +43,14 @@
   - [도형넓이계산](Javascript/review_cocoa/figureArea.js)
   - [진수변환](Javascript/review_cocoa/notation.js)
 
+- **[Lecture] 프론트엔드 필수 브라우저 101, 드림코딩 by 엘리, 2021. 12**
+
+  - [윈도우 사이즈, 브라우저 좌표](Javascript/brower101/brower.md)
+  - [Window Load API](Javascript/brower101/window-load.md)
+  - [이벤트 버블링, 캡처, 위임](Javascript/brower101/event-capturePreventDelegation.md)
+  - [Critical Rendering Path (브라우저 렌더링 과정)](Javascript/brower101/critical-rendering-path.md)
+    - [CRP 예제](Javascript/brower101/coordinates.html)
+
 - **[Book] Let's Get IT 자바스크립트 프로그래밍, 조현영, 2021. 9 ~ 10**
 
   - [Study Note](Javascript/12webgames/study_note.md)
