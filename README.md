@@ -62,6 +62,8 @@
   - [이벤트 버블링, 캡처, 위임](Javascript/brower101/event-capturePreventDelegation.md)
   - [Critical Rendering Path (브라우저 렌더링 과정)](Javascript/brower101/critical-rendering-path.md)
     - [CRP 예제](Javascript/brower101/coordinates.html)
+  - [프로세스(Process)와 스레드(Thread)](Javascript/brower101/process_thread.md)
+  - [자바스크립트 런타임 환경, 브라우저 런타임 환경](Javascript/brower101/javascript_brower_runtime.md)
 
 - **[Book] Let's Get IT 자바스크립트 프로그래밍, 조현영, 2021. 9 ~ 10**
 
