@@ -13,7 +13,7 @@
 ### Courses
 
 - [Code Squard Cocoa JS, 2021. 11 ~ 12](https://github.com/mansaout/codesquard-cocoa-js)
-- [계획] Code Squard Masters JS, 2022. 1 ~ 7
+- [Code Squard Masters JS, 2022. 1 ~ 7](https://github.com/mansaout/codesquard-masters-js)
 
 <br>
 
@@ -34,6 +34,7 @@
   - [4. 알고리즘](CS50_2019/algorithms.md)
   - [5. 메모리](CS50_2019/memory.md)
   - [6. 자료구조](CS50_2019/data_structures.md)
+  - [수료증](CS50_2019/certificate.pdf)
 
 - **[Lecture] 알고리즘&자료구조**
 - **[Lecture] HTTP 기본지식**
@@ -43,17 +44,14 @@
 
 ### Javascript
 
-- **Cocoa JS 과정 다시 풀어보기, 2021. 12**
+- **Cocoa JS 다시 풀어보기, 2021. 12**
 
   - [도형 넓이 구하기](Javascript/review_cocoa/figureArea.js)
   - [진수 변환하기](Javascript/review_cocoa/notation.js)
   - [Reduce 만들기](Javascript/review_cocoa/myReduce.js)
   - [배열 다루기](Javascript/review_cocoa/playArray.js)
-  - [HashMap 구현]
-  - [괄호문법 검사기]
-  - [성적관리 프로그램]
-  - [Smart Dropdown]
-  - [웹TODO]
+  - [HashMap 구현](Javascript/review_cocoa/hashMap.js)
+  - [괄호문법 검사기](Javascript/review_cocoa/checkBrackets.js)
 
 - **[Lecture] 프론트엔드 필수 브라우저 101, 드림코딩 by 엘리, 2021. 12**
 
