@@ -1,5 +1,3 @@
-// (Level1)
-// 모의고사 찍기 1등
 // https://programmers.co.kr/learn/courses/30/lessons/42840
 
 function solution(answers) {

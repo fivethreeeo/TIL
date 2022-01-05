@@ -1,5 +1,4 @@
-// 로또의 최고 순위와 최저 순위
-// https://leetcode.com/problems/reverse-integer/
+// https://leetcode.com/problems/reverse-integer
 
 function reverse(x) {
   const reverse = Number(Math.abs(x).toString().split('').reverse().join(''));
