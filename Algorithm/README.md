@@ -36,5 +36,3 @@
   - https://leetcode.com/problems/roman-to-integer/
   - https://leetcode.com/problems/longest-common-prefix/
   - https://leetcode.com/problems/merge-two-sorted-lists/
-
-- 수요일
