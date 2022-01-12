@@ -10,29 +10,40 @@
 | 006 | 2021-12-13 | https://leetcode.com/problems/reverse-integer            | [js](code/lt_reverse-integer.js) | -        |
 | 007 | 2022-01-05 | https://www.acmicpc.net/problem/1000                     | [js](code/bj_1000.js)            | -        |
 | 008 | 2022-01-05 | https://www.acmicpc.net/problem/1009                     | [js](code/bj_1009.js)            | 02:02:14 |
-| 009 | 2022-01    | https://www.acmicpc.net/problem/1076                     | [js](code/bj_1076.js)            |          |
-| 010 | 2022-01    | https://www.acmicpc.net/problem/1052                     | [js](code/bj_1052.js)            |          |
-| 011 | 2022-01    | https://www.acmicpc.net/problem/10757                    | [js](code/bj_10757.js)           |          |
+| 009 | 2022-01-12 | https://leetcode.com/problems/two-sum                    | [js](code/lt_two-sum.js)         | 00:33:13 |
 
 <br>
 
-- 금요일
+#### 수요일
 
-  - https://www.acmicpc.net/problem/1008
-  - https://www.acmicpc.net/problem/2438
-  - https://www.acmicpc.net/problem/2920
-  - https://www.acmicpc.net/problem/8958
-  - https://www.acmicpc.net/problem/11654
-  - https://programmers.co.kr/learn/courses/30/lessons/12901
-  - https://programmers.co.kr/learn/courses/30/lessons/12928
-  - https://www.hackerrank.com/challenges/solve-me-first/problem
-  - https://www.hackerrank.com/challenges/grading/problem
-  - https://www.hackerrank.com/challenges/compare-the-triplets/problem
-  - https://www.hackerrank.com/challenges/a-very-big-sum/problem
-  - https://www.hackerrank.com/challenges/time-conversion/problem
-  - https://www.hackerrank.com/challenges/kangaroo/problem
-  - https://leetcode.com/problems/two-sum/
-  - https://leetcode.com/problems/palindrome-number/
-  - https://leetcode.com/problems/roman-to-integer/
-  - https://leetcode.com/problems/longest-common-prefix/
-  - https://leetcode.com/problems/merge-two-sorted-lists/
+- https://www.acmicpc.net/problem/1076
+- https://www.acmicpc.net/problem/1052
+- https://www.acmicpc.net/problem/10757
+-
+- https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+- https://leetcode.com/problems/palindrome-number
+- https://leetcode.com/problems/longest-common-prefix
+- https://leetcode.com/problems/linked-list-cycle
+
+<br>
+
+#### 금요일
+
+- https://www.acmicpc.net/problem/1008
+- https://www.acmicpc.net/problem/2438
+- https://www.acmicpc.net/problem/2920
+- https://www.acmicpc.net/problem/8958
+- https://www.acmicpc.net/problem/11654
+- https://programmers.co.kr/learn/courses/30/lessons/12901
+- https://programmers.co.kr/learn/courses/30/lessons/12928
+- https://www.hackerrank.com/challenges/solve-me-first/problem
+- https://www.hackerrank.com/challenges/grading/problem
+- https://www.hackerrank.com/challenges/compare-the-triplets/problem
+- https://www.hackerrank.com/challenges/a-very-big-sum/problem
+- https://www.hackerrank.com/challenges/time-conversion/problem
+- https://www.hackerrank.com/challenges/kangaroo/problem
+- https://leetcode.com/problems/two-sum/
+- https://leetcode.com/problems/palindrome-number/
+- https://leetcode.com/problems/roman-to-integer/
+- https://leetcode.com/problems/longest-common-prefix/
+- https://leetcode.com/problems/merge-two-sorted-lists/
