@@ -136,9 +136,7 @@ pickFruits().then(console.log); // print: 🍎 + 🍌 //2000ms
 // 값을 배열 형식으로 주고 받음
 
 function pickAllFruits() {
-  return Promise.all([getApple(), getBanana()]).then((fruits) =>
-    fruits.join(' + ')
-  );
+  return Promise.all([getApple(), getBanana()]).then((fruits) => fruits.join(' + '));
 }
 
 // async & await 로 바꾸면
