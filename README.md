@@ -28,12 +28,11 @@
 
 ### Computer Science
 
-- **[Book] 한 권으로 읽는 컴퓨터 구조와 프로그래밍, Jonathan E. Steinhart, 2022. 1 ~**
+- **[Book] 한 권으로 읽는 컴퓨터 구조와 프로그래밍, Jonathan E. Steinhart, 2022. 1**
 
 - **[Lecture] 모두를 위한 컴퓨터 과학 (CS50 2019), David J. Malan, 2021. 12**
 
-###### [Certificate](CS50_2019/certificate.pdf)
-
+- ###### [Certificate](CS50_2019/certificate.pdf)
 - [1. 컴퓨팅 사고](CS50_2019/computational_thinking.md)
 - [2. C 언어](CS50_2019/c_language.md)
 - [3. 배열](CS50_2019/array.md)
