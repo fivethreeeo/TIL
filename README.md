@@ -2,7 +2,7 @@
 
 # **Today I Learned 📈**
 
-학습 노트, 프로젝트, 회고 등을 기록하는 공간입니다.
+학습 노트를 저장하는 공간입니다.
 
 #### **작성규칙**
 
@@ -15,7 +15,6 @@
 ### Courses
 
 - [Code Squard Cocoa JS, 2021. 11 ~ 12](https://github.com/mansaout/codesquard-cocoa-js)
-- Code Squard Masters JS, 2022. 1 ~ 7
 
 <br>
 
@@ -26,7 +25,10 @@
 
 <br>
 
-### Computer Science
+- **[Lecture] 알고리즘&자료구조**
+- **[Lecture] 운영체제**
+
+### Computer Science Basic
 
 - **[Book] 한 권으로 읽는 컴퓨터 구조와 프로그래밍, Jonathan E. Steinhart, 2022. 1**
 
@@ -39,11 +41,12 @@
   - [5. 메모리](CS50_2019/memory.md)
   - [6. 자료구조](CS50_2019/data_structures.md)
 
-- **[Lecture] 알고리즘&자료구조**
-- **[Lecture] HTTP 기본지식**
-- **[Lecture] 운영체제**
-
 <br>
+
+### HTTP
+
+- **[Lecture] 모든 개발자를 위한 HTTP 기본지식**
+  - - [인터넷 네트워크]()
 
 ### Javascript
 
