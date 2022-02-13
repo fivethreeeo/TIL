@@ -21,38 +21,30 @@
 | `220126` | https://www.hackerrank.com/challenges/save-the-prisoner/problem   | [js](code/hr_save-the-prisoner.js)   | 00:58:06 |
 | `220213` | https://programmers.co.kr/learn/courses/30/lessons/12901          | [js](code/pg_12901.js)               | 00:10:36 |
 | `220213` | https://programmers.co.kr/learn/courses/30/lessons/12928          | [js](code/pg_12928.js)               | 00:08:27 |
+| `220213` | https://leetcode.com/problems/roman-to-integer/                   | [js](code/lt_roman-to-integer.js)    | 00:48:01 |
 
 <br>
 
 ```
-수요일
-
-https://www.acmicpc.net/problem/1076
-https://www.acmicpc.net/problem/1052
-https://www.acmicpc.net/problem/10757
-https://leetcode.com/problems/remove-duplicates-from-sorted-list/
-https://leetcode.com/problems/palindrome-number
-https://leetcode.com/problems/longest-common-prefix
-https://leetcode.com/problems/linked-list-cycle
-```
-
-```
-금요일
-
 https://www.acmicpc.net/problem/1008
+https://www.acmicpc.net/problem/1052
+https://www.acmicpc.net/problem/1076
 https://www.acmicpc.net/problem/2438
 https://www.acmicpc.net/problem/2920
 https://www.acmicpc.net/problem/8958
+https://www.acmicpc.net/problem/10757
 https://www.acmicpc.net/problem/11654
+
 https://www.hackerrank.com/challenges/solve-me-first/problem
 https://www.hackerrank.com/challenges/grading/problem
 https://www.hackerrank.com/challenges/compare-the-triplets/problem
 https://www.hackerrank.com/challenges/a-very-big-sum/problem
 https://www.hackerrank.com/challenges/time-conversion/problem
 https://www.hackerrank.com/challenges/kangaroo/problem
-https://leetcode.com/problems/two-sum/
-https://leetcode.com/problems/palindrome-number/
-https://leetcode.com/problems/roman-to-integer/
-https://leetcode.com/problems/longest-common-prefix/
+
 https://leetcode.com/problems/merge-two-sorted-lists/
+https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+https://leetcode.com/problems/palindrome-number
+https://leetcode.com/problems/longest-common-prefix
+https://leetcode.com/problems/linked-list-cycle
 ```
