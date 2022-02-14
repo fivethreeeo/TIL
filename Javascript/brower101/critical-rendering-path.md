@@ -21,7 +21,7 @@
 
 #### `Operation` : 브라우저에 그림을 그려 렌더링하는 파트
 
-1. dom tree와 csson tree를 묶어 render tree를 생성 `(rendering)`
+1. dom tree와 cssom tree를 묶어 render tree를 생성 `(rendering)`
 2. render tree를 기반으로 layout 생성 `(layout)`
 3. 실제 화면에 픽셀로 표현 `(painting)`
 
