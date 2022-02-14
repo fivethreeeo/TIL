@@ -22,10 +22,13 @@
 | `220213` | https://programmers.co.kr/learn/courses/30/lessons/12901          | [js](code/pg_12901.js)               | 00:10:36 |
 | `220213` | https://programmers.co.kr/learn/courses/30/lessons/12928          | [js](code/pg_12928.js)               | 00:08:27 |
 | `220213` | https://leetcode.com/problems/roman-to-integer/                   | [js](code/lt_roman-to-integer.js)    | 00:48:01 |
+| `220214` | https://leetcode.com/problems/palindrome-number/                  | [js](code/lt_palindrome-number.js)   | 00:14:03 |
 
 <br>
 
 ```
+* 코드스쿼드 남은 문제
+
 https://www.acmicpc.net/problem/1008
 https://www.acmicpc.net/problem/1052
 https://www.acmicpc.net/problem/1076
@@ -42,7 +45,6 @@ https://www.hackerrank.com/challenges/a-very-big-sum/problem
 https://www.hackerrank.com/challenges/time-conversion/problem
 https://www.hackerrank.com/challenges/kangaroo/problem
 
-https://leetcode.com/problems/merge-two-sorted-lists/
 https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 https://leetcode.com/problems/palindrome-number
 https://leetcode.com/problems/longest-common-prefix
