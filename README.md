@@ -1,6 +1,6 @@
 ###### Started in August 2021
 
-# **Today I Learned 📈**
+# **Today I Learned 📝**
 
 학습 노트를 저장하는 공간입니다.
 
