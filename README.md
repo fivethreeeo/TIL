@@ -10,43 +10,24 @@
 - 문서를 다시 봤을 때, 추가적인 검색을 하지 않게 자세히 기록한다.
 - 레퍼런스를 명시한다.
 
-##
+<br>
 
 ### Courses
 
 - [Code Squard Cocoa JS, 2021. 11 ~ 12](https://github.com/mansaout/codesquard-cocoa-js)
+- Code Squard Masters JS, 2022. 1 ~ 6
 
 <br>
 
-### Others
+### Algorithm & Data Structure
 
-- [알고리즘 풀이 저장소](Algorithm/README.md)
-- [Git Cheat Sheet](https://github.com/mansaout/TIL/blob/main/Git/git_cheat_sheet.md)
+- [알고리즘 풀이 저장소](https://github.com/mansaout/Algorithm)
 
-<br>
+- **[Lecture] JavaScript 알고리즘 & 자료구조 마스터클래스, Colt Steele, 2022. 3 ~**
 
-- **[Lecture] 알고리즘&자료구조**
-- **[Lecture] 운영체제**
-
-### Computer Science Basic
-
-- **[Book] 한 권으로 읽는 컴퓨터 구조와 프로그래밍, Jonathan E. Steinhart, 2022. 1**
-
-- **[Lecture] 모두를 위한 컴퓨터 과학 (CS50 2019), David J. Malan, 2021. 12**
-
-  - [1. 컴퓨팅 사고](CS50_2019/computational_thinking.md)
-  - [2. C 언어](CS50_2019/c_language.md)
-  - [3. 배열](CS50_2019/array.md)
-  - [4. 알고리즘](CS50_2019/algorithms.md)
-  - [5. 메모리](CS50_2019/memory.md)
-  - [6. 자료구조](CS50_2019/data_structures.md)
+  - 빅오표기법
 
 <br>
-
-### HTTP
-
-- **[Lecture] 모든 개발자를 위한 HTTP 기본지식**
-  - - [인터넷 네트워크]()
 
 ### Javascript
 
@@ -91,3 +72,37 @@
   - [Promise, Callback to Promise](Javascript/basic/15_promise.md)
   - [async & await, all(), race()](Javascript/basic/16_async_await.md)
   - [Destructuring Assignment, Spread Syntax, Optional Chaining](Javascript/basic/17_es6_es11.md)
+
+<br>
+
+### Git
+
+- [Git Cheat Sheet](https://github.com/mansaout/TIL/blob/main/Git/git_cheat_sheet.md)
+
+<br>
+
+### HTTP
+
+- **[Lecture] 모든 개발자를 위한 HTTP 기본지식, 2022. 3**
+
+  - [인터넷 네트워크](HTTP/1_internet-network.md)
+  - [URI와 웹 브라우저 요청 흐름](HTTP/2_uri-webbrowser.md)
+  - HTTP 기본
+  - HTTP 메서드
+  - HTTP 메서드 활용
+  - HTTP 상태코드
+  - HTTP 헤더 - 일반 헤더
+  - HTTP 헤더 - 캐시
+
+<br>
+
+### Computer Science Basic
+
+- **[Lecture] 모두를 위한 컴퓨터 과학 (CS50 2019), David J. Malan, 2021. 12**
+
+  - [1. 컴퓨팅 사고](CS50_2019/computational_thinking.md)
+  - [2. C 언어](CS50_2019/c_language.md)
+  - [3. 배열](CS50_2019/array.md)
+  - [4. 알고리즘](CS50_2019/algorithms.md)
+  - [5. 메모리](CS50_2019/memory.md)
+  - [6. 자료구조](CS50_2019/data_structures.md)
