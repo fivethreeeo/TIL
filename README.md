@@ -25,7 +25,7 @@
 
 - **[Lecture] JavaScript 알고리즘 & 자료구조 마스터클래스, Colt Steele, 2022. 3 ~**
 
-  - 빅오표기법
+  - [빅오표기법](Algorithm/)
 
 <br>
 
