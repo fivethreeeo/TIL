@@ -14,7 +14,7 @@
 
 ### Courses
 
-- [Code Squard Cocoa JS, 2021. 11 ~ 12](https://github.com/mansaout/codesquard-cocoa-js)
+- [Code Squard Cocoa JS 학습기록, 2021. 11 ~ 12](https://github.com/mansaout/codesquard-cocoa-js)
 - Code Squard Masters JS, 2022. 1 ~ 7
 
 <br>
