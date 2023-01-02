@@ -1,8 +1,8 @@
 # 메타인지 데일리 질문
 
-> #### 2022.12.27 ~ 2일 째 진행 중🏃🏃🏃
+> #### 2022.12.29 ~ 2일 차 진행 중🏃🏃🏃
 >
-> https://velog.io/@husbumps/series/TIL
+> https://velog.io/@husbumps/series/daily-retrospective
 
 <br>
 
