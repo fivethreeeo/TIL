@@ -5,4 +5,4 @@
 
 #### Archive
 
-- [학습노트 저장 공간 (2021. 8 ~ 2022. 3)](https://github.com/sangbeomheo/TIL/tree/main/Archive%202021.%208%20~%202022.%203)
+- [학습노트 저장 공간 (2022년)](https://github.com/sangbeomheo/TIL/tree/main/Archive%202021.%208%20~%202022.%203)
