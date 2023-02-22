@@ -1,6 +1,6 @@
 # **Today I Learned 📝**
 
-> 2021. 8 ~ 2022. 3 동안 작성한 학습 노트 입니다.
+> 2022년에 작성한 학습 노트 입니다.
 
 학습 노트를 저장하는 공간입니다.
 
@@ -14,7 +14,7 @@
 
 ### Javascript
 
-- **[Lecture] 프론트엔드 필수 브라우저 101, 드림코딩 by 엘리, 2021. 12**
+- **[Lecture] 프론트엔드 필수 브라우저 101, 드림코딩 by 엘리**
 
   - [윈도우 사이즈, 브라우저 좌표](Javascript/brower101/brower.md)
   - [Window Load API](Javascript/brower101/window-load.md)
@@ -24,7 +24,7 @@
   - [프로세스(Process)와 스레드(Thread)](Javascript/brower101/process_thread.md)
   - [자바스크립트 런타임 환경, 브라우저 런타임 환경](Javascript/brower101/javascript_brower_runtime.md)
 
-- **[Book] Let's Get IT 자바스크립트 프로그래밍, 조현영, 2021. 9 ~ 10**
+- **[Book] Let's Get IT 자바스크립트 프로그래밍, 조현영**
 
   - [Study Note](Javascript/12webgames/study_note.md)
   - [11. 이벤트 루프 이해하기 - 카드 짝 맞추기 게임](https://github.com/mansaout/card-matching)
@@ -58,30 +58,9 @@
 
 <br>
 
-### Git
-
-- [Git Cheat Sheet](https://github.com/mansaout/TIL/blob/main/Git/git_cheat_sheet.md)
-
-<br>
-
-### HTTP
-
-- **[Lecture] 모든 개발자를 위한 HTTP 기본지식, 2022. 3**
-
-  - [인터넷 네트워크](HTTP/1_internet-network.md)
-  - [URI와 웹 브라우저 요청 흐름](HTTP/2_uri-webbrowser.md)
-  - HTTP 기본
-  - HTTP 메서드
-  - HTTP 메서드 활용
-  - HTTP 상태코드
-  - HTTP 헤더 - 일반 헤더
-  - HTTP 헤더 - 캐시
-
-<br>
-
 ### Computer Science Basic
 
-- **[Lecture] 모두를 위한 컴퓨터 과학 (CS50 2019), David J. Malan, 2021. 12**
+- **[Lecture] 모두를 위한 컴퓨터 과학 (CS50 2019), David J. Malan**
 
   - [1. 컴퓨팅 사고](CS50_2019/computational_thinking.md)
   - [2. C 언어](CS50_2019/c_language.md)
